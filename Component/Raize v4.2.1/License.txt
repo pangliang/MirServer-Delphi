@@ -1,0 +1,59 @@
+LICENSE AGREEMENT FOR RAIZE COMPONENTS
+
+This software is protected by copyright law and international copyright treaty.  Therefore, you must treat this software just like a book, except that you may copy it onto a computer to be used and you may make archive copies of the software for the sole purpose of backing up our software and protecting your investment from loss.  The software may be moved from one computer to another, so long as there is no possibility of it being used by more than one person at a time.
+
+ADDING USERS
+You may add users by paying for a separate software package for each user you wish to add.  You may also add users by purchasing a site-license, so long as the number of persons who are able to use the software at one time is not more than the number of authorized users specified in our package or license.
+
+TRANSFERRING THE SOFTWARE
+You may transfer all of your rights to use the software to another person, provided that you transfer to that person all of the software, diskettes (if applicable), and documentation provided in this package (including this statement), and transfer or destroy all copies in any form.  Remember, once you transfer the software, you no longer have any right to use it, and the person to whom it is transferred may use it only in accordance with the copyright law, international treaty, and this statement.
+
+If you have purchased an upgrade version of the software, it constitutes a single product with the Raize Software product that you upgraded.  For example, the upgrade and the software that you upgraded cannot both be available for use by two different people at the same time, and cannot be transferred separately, without written permission from Raize Software.
+
+Except as provided in this statement, you may not transfer, rent, lease, lend, copy, modify, translate, sublicense, time-share, or electronically transmit or receive the software, media, or documentation.
+
+LIMITED WARRANTY
+Raize Software, Inc. warrants the physical media (or electronic distribution file) and online help files provided by Raize Software to be free of defects in materials (if provided on diskette) and workmanship for a period of sixty (60) days from the original purchase date.  If Raize Software receives notification within the warranty period of defects in materials or workmanship, and determines that such notification is correct, Raize Software will replace the defective media or files.
+
+The entire and exclusive liability and remedy for breach of this limited warranty shall be limited to replacement of defective media or documentation and shall not include or extend to any claim for or right to recover any other damages, including but not limited to, loss of profit, data, or use of the software or special, incidental or consequential damages, or other similar claims, even if Raize Software has been specifically advised of the possibility of such damages.  In no event will Raize Software's liability for any damages to you or any other person ever exceed the lower of the list price or the actual price paid for the package or the license to use the software, regardless of the form of the claim.
+
+RAIZE SOFTWARE, INC. SPECIFICALLY DISCLAIMS ALL OTHER WARRANTIES, REPRESENTATIONS, OR CONDITIONS, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, ANY IMPLIED WARRANTY OR CONDITION OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  ALL OTHER IMPLIED TERMS ARE EXCLUDED.
+
+Specifically, Raize Software makes no representation or warranty that the software or documentation are "error-free," or meet any user's particular standards, requirements, or needs.  In all events, any implied warranty, representation, condition, or other term is limited to the electronic distribution file(s) and online documentation and is limited to the 60-day duration of the limited warranty.
+
+Raize Software is not responsible for, and does not make any representation, warranty, or condition concerning product, media, software, or documentation not manufactured or supplied by Raize Software, such as third-parties' programs that are designed using Raize Software software or which include Raize Software programs or files.
+
+GENERAL TERMS THAT APPLY TO COMPILED PROGRAMS
+The license granted in this statement for you to create your own compiled programs and distribute your programs using the software in this package is subject to all of the following conditions:
+
+1. All copies of the programs you create must include a valid copyright notice, either your own or the Raize Software copyright notice that appears on the product.
+
+2. You may not remove or alter any Raize Software's copyright, trademark, or other proprietary rights notice contained in any portion of Raize Software units, source code, or other files that bear such a notice.
+
+3. Raize Software provides no warranty at all to any person, other than the Limited Warranty provided to the original purchaser of this package.
+
+4. You will remain solely responsible to anyone receiving your programs for support, service, upgrades, or technical or other assistance, and such recipients will have no right to contact Raize Software for such services or assistance.
+
+5. You will indemnify, hold harmless, and defend Raize Software from and against any claims or lawsuits, including attorney's fees, that arise or result from the use, reproduction, or distribution of your programs.
+
+6. Your programs must be written using a licensed, registered copy of this Raize Software product.
+
+7. You may not use Raize Software's name, logo, or trademarks to market your programs, except to state that your program was written using this Raize Software product.
+
+8. All Raize Software units, source code, and other files remain Raize Software's exclusive property.
+
+PROVISIONS FOR VISUAL COMPONENT LIBRARY CLASSES (i.e. COMPONENTS)
+Raize Software, Inc. grants you a non-exclusive royalty-free right to compile, reproduce, and distribute any new software programs created using the Components included in this package provided that you: (a) distribute the Components only in compiled executable programs; (b) do not use any part of the source code of the Components to build any other components for public distribution or commercial sale; and (c) do not use any of the Components as an object-oriented ancestor to build any other components (through inheritance) for public distribution or commercial sale.
+
+USING RAIZE COMPONENTS IN PROPERTY EDITORS AND COMPONENT EDITORS
+Distributing a property editor or component editor that uses one or more of the Components from this package requires that the runtime package(s) for the Components also be distributed.  Runtime packages (*.BPL files) may be redistributed.  IMPORTANT: The *.DCP files and *.BPI files for each runtime package in this product MAY NOT be redistributed.  In addition, redistributing the design packages included with this product is prohibited.
+
+
+ACTIVEX TECHNOLOGIES AND RAIZE COMPONENTS
+Recent versions of Delphi and C++Builder offer extensive ActiveX support. Starting with Delphi 3, it is possible to convert a native Delphi component into an ActiveX control.  Converting any of the Raize Components into an ActiveX control and then redistributing the resulting control with or without the Raize Components runtime package is prohibited.  However, using the Raize Components within an ActiveForm is permissible.
+
+
+U.S. GOVERNMENT RESTRICTED RIGHTS
+The Software and documentation are provided with Restricted Rights.  Use, duplication, or disclosure by the government is subject to restrictions as set forth in subparagraph (c)(1)(ii) of the Rights in Technical Data and Computer Software clause at DFARS 252.227-7013 or subparagraphs (c)(1) and (2) of the Commercial Computer Software--Restricted Rights at 48 CFR 52.227-19, as applicable.  Contractor/manufacturer is Raize Software, Inc. at 511 Aurora Ave, Suite 206, Naperville, IL 60540.
+
+This statement shall be construed, interpreted, and governed by the laws of the State of Illinois, United States of America.

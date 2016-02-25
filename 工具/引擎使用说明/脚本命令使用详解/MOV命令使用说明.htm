@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>MOV命令使用说明</TITLE>
+<style type="text/css">
+<!--
+.style2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #0000FF;
+}
+body,td,th {
+	color: #FF0000;
+}
+.style10 {color: #000000}
+.style11 {font-size: 12px; font-weight: bold; color: #FF0000; }
+-->
+</style>
+</HEAD>
+<BODY>
+<p class="style2">MOV命令使用说明：</p>
+<p class="style11">增加MOV命令可以 直接在2个变量之间操作 。<br>
+  假设已经定义自定义字符变量Name和数字型自定义变量TEST<br>
+以下是MOV的几种使用方法</p>
+<p class="style10">MOV HUMAN Name S0 这句的意思就是把S0值 传给自定义变量Name<br>
+  MOV S0 HUMAN Name 把自定义变量Name值 传给变量S0<br>
+  MOV S0 你好 把“你好”传给变量S0<br>
+  MOV HUMAN Name 你好 把“你好”传给自定义变量Name<br>
+  MOV S0 S1 把S1值传给S0<br>
+  MOV D1 1 把1传给变量D1 （这个是最常见的使用方法）<br>
+  MOV HUMAN TEST D1 把变量D1值传给自定义变量TEST<br>
+  MOV D1 HUMAN TEST 把自定义变量TEST传给变量D1<br>
+  MOV HUMAN TEST 1 把1传给自定义变量TEST</p>
+</BODY>
+</HTML>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>检查对面人物站的位置</TITLE>
+</HEAD>
+<BODY>
+<P><FONT size=2><STRONG><FONT color=#0000ff>功能：</FONT><FONT 
+color=#000000></STRONG><BR></FONT>&nbsp;&nbsp;&nbsp; 可以检查对面人物站的位置性别（要求面对面）。</FONT></P>
+<P><FONT size=2><STRONG><FONT color=#0000ff>格式：</FONT><BR></STRONG>CHECKPOSEDIR 
+控制符(1,2)<BR><BR><BR>;==========================================<BR>;检查对面人物是否面对面<BR>[@checkposedir0]<BR>#IF<BR>&nbsp; 
+CHECKPOSEDIR<BR>#SAY<BR>你二个站的位置正确。<BR>#ELSESAY<BR>你二个站的位置不正确。<BR>;==========================================<BR><BR>;==========================================<BR>;检查对面人物是否面对面，而且要求二个人相同性别<BR>[@checkposelevel0]<BR>#IF<BR>&nbsp; 
+CHECKPOSEDIR 
+1<BR>#SAY<BR>你二个站的位置及性别一样。<BR>#ELSESAY<BR>你二个站的位置不正确或性别不一样。<BR>;==========================================<BR><BR>;==========================================<BR>;检查对面人物是否面对面，而且要求二个人不同性别<BR>[@checkposelevel0]<BR>#IF<BR>&nbsp; 
+CHECKPOSEDIR 
+2<BR>#SAY<BR>你二个站的位置及性别不一样。<BR>#ELSESAY<BR>你二个站的位置不正确或性别一样。<BR>;==========================================</FONT><FONT 
+size=3><BR><BR></FONT></P>
+</BODY>
+</HTML>

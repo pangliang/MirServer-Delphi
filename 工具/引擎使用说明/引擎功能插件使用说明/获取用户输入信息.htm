@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>获取用户输入信息</TITLE>
+</HEAD>
+<BODY text=#000000 vLink=#800080 aLink=#0000ff link=#0000ff bgColor=#ffffff 
+bgproperties="fixed" >
+<p>;获取用户输入信息</p>
+<p>[@Main] <br>
+  请输入数字1&lt;输入/@@InPutInteger1&gt;\<br>
+  请输入数字2&lt;输入/@@InPutInteger2&gt;\<br>
+...............................\</p>
+<p>请输入字符1&lt;输入/@@InPutString1&gt;\<br>
+  请输入字符2&lt;输入/@@InPutString2&gt;\</p>
+<p>...............................\</p>
+<p>[@InPutInteger1]<br>
+  #SAY<br>
+  你输入的数字1是&lt;$STR(N0)&gt;\</p>
+<p>[@InPutInteger2]<br>
+  #SAY<br>
+  你输入的数字2是&lt;$STR(N0)&gt;\</p>
+<p>===============================</p>
+<p>[@InPutString1]<br>
+  #SAY<br>
+  你输入的字符1是&lt;$STR(S0)&gt;\</p>
+<p>[@InPutString2]<br>
+  #SAY<br>
+  你输入的字符2是&lt;$STR(S0)&gt;\</p>
+<p>[@MsgFilter] ;如果用户输入的信息在插件消息过滤列表中就会调转到这个字段<br>
+  #SAY<br>
+输入的字符非法</p>
+<p><br>
+</p>
+</BODY>
+</HTML>

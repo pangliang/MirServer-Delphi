@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>自定义封号脚本</TITLE>
+</HEAD>
+<BODY>
+自定义封号脚本： <br>
+ <br>
+[@main] <br>
+/ <br>
+/ <br>
+&lt;请输入你喜欢的封号/@@InPutString封号&gt; \ <br>
+<br>
+<br>
+[@InPutString封号] <br>
+#ACT <br>
+setranklevelname S0 <br>
+MOV HUMAN Name S0 <br>
+SAVEVAR HUMAN Name 数据文件.txt <br>
+MESSAGEBOX 你的封号已经变成&lt;$STR(S0)&gt;！！！ <br>
+<br>
+登陆脚本要加载的： <br>
+[@Login] <br>
+#ACT <br>
+VAR String HUMAN Name <br>
+LOADVAR HUMAN Name 数据文件.txt <br>
+Setranklevelname HUMAN Name
+<P><FONT size=2><BR>
+</FONT></P>
+</BODY>
+</HTML>

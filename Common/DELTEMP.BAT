@@ -1,0 +1,10 @@
+;del *.cfg
+;del *.dof
+del *.ddp
+del *.~ddp
+del *.dcu
+;del *.~dpr
+del *.~pas
+del *.~pa
+del *.~dfm
+del *.bak

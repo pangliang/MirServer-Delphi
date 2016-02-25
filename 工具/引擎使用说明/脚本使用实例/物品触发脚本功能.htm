@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>物品触发脚本功能</TITLE>
+</HEAD>
+<BODY>
+<P><FONT size=2><STRONG><FONT 
+color=#0000ff>功能：</FONT></STRONG><BR>&nbsp;&nbsp;&nbsp; 
+双击物品可以自动触发指定脚本功能；</FONT> </P>
+<P><FONT size=2><STRONG><FONT 
+color=#0000ff>使用方法：</FONT></STRONG><BR>&nbsp;&nbsp;&nbsp; 
+1、物品数据库设置1：STDMODE字段设置为：31<BR>&nbsp;&nbsp;&nbsp; 
+2、物品数据库设置2：AniCount字段设置为：X<BR>&nbsp;&nbsp;&nbsp; 
+X为指字数字触发脚本（1-999）<BR>&nbsp;&nbsp;&nbsp; 
+3、\Mir200\Envir\market_def\QFunction-0.txt下设置<BR>[@StdModeFuncX]<BR>#IF<BR>#ACT<BR>&nbsp;&nbsp;&nbsp; 
+sendmsg 7 
+触发成功！！！<BR>===================================<BR>注：其中X为物品数据库设置2中的X</FONT></P>
+</BODY>
+</HTML>

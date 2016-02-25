@@ -1,0 +1,58 @@
+package DCP_d4;
+
+{$R *.RES}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $00400000}
+{$DESCRIPTION 'DCPcrypt cryptographic components library v2.0'}
+{$DESIGNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  vcl;
+
+contains
+  DCPreg in 'DCPreg.pas',
+  DCPconst in 'DCPconst.pas',
+  DCPcrypt in 'DCPcrypt.pas',
+  Base64 in 'Base64.pas',
+  Blowfish in 'Ciphers\Blowfish.pas',
+  RC4 in 'Ciphers\RC4.pas',
+  Sha1 in 'Hashes\Sha1.pas',
+  Md4 in 'Hashes\Md4.pas',
+  Haval in 'Hashes\Haval.pas',
+  Md5 in 'Hashes\Md5.pas',
+  Rmd160 in 'Hashes\Rmd160.pas',
+  Twofish in 'Ciphers\Twofish.pas',
+  Cast128 in 'Ciphers\Cast128.pas',
+  Ice in 'Ciphers\Ice.pas',
+  Cast256 in 'Ciphers\Cast256.pas',
+  DES in 'Ciphers\DES.pas',
+  IDEA in 'Ciphers\IDEA.pas',
+  Rijndael in 'Ciphers\Rijndael.pas',
+  Gost in 'Ciphers\Gost.pas',
+  RC2 in 'Ciphers\RC2.pas',
+  RC5 in 'Ciphers\RC5.pas',
+  RC6 in 'Ciphers\RC6.pas',
+  Misty1 in 'Ciphers\Misty1.pas',
+  Mars in 'Ciphers\Mars.pas';
+
+end.

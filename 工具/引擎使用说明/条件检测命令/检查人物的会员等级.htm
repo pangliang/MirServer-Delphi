@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>检查人物的会员等级</TITLE>
+</HEAD>
+<BODY>
+<P><FONT size=2><STRONG><FONT color=#0000ff>功能：</FONT><FONT 
+color=#000000></STRONG><BR> 
+</FONT>&nbsp;&nbsp;&nbsp; 
+可以检查人物的会员等级。</FONT></P>
+<P><FONT size=2><STRONG><FONT color=#0000ff>格式：</FONT><BR>
+</STRONG>CHECKMEMBERLEVEL 类型(1-65535) 
+控制符(=,&gt;,&lt;)&nbsp; 等级数(1 - 
+65535) <font color="#FF0000"><strong>支持变量操作</strong></font><BR>
+<BR>;==========================================<BR>;检查人物的会员等级是否为指定等级<BR>[@checkmemberlevel0]<BR>#IF<BR>&nbsp; 
+CHECKMEMBERLEVEL 2 = 
+5<BR>#SAY<BR>您的会员等级为5。<BR>#ELSESAY<BR>您的会员等级不为5。<BR>;==========================================<BR><BR>;==========================================<BR>;检查人物的会员等级是否大于指定等级<BR>[@checkmemberlevel1]<BR>#IF<BR>&nbsp; 
+CHECKMEMBERLEVEL 2 &gt; 
+5<BR>#SAY<BR>您的会员等级大于5。<BR>#ELSESAY<BR>您的会员等级不大于5。<BR>;==========================================<BR><BR>;==========================================<BR>;检查人物的会员等级是否小于指定等级<BR>[@checkmemberlevel1]<BR>#IF<BR>&nbsp; 
+CHECKMEMBERLEVEL 2 &lt; 
+5<BR>#SAY<BR>您的会员等级小于5。<BR>#ELSESAY<BR>您的会员等级不小于5。<BR>;==========================================<BR><BR></FONT></P>
+</BODY>
+</HTML>

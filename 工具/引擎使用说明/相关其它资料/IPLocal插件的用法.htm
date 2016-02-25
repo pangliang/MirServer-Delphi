@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>IPLocal插件的用法</TITLE>
+</HEAD>
+<BODY>
+<P>IPLocal插件的用法</P>
+<P><FONT color=#ff0000>要确定M2加载了IPLocal.dll这个插件</FONT></P>
+<P>[@main]<BR>我是新手接待员，可以送你到指定的地方。\<BR>&lt;战士<A>/@Warr</A>&gt;&nbsp;&nbsp;&nbsp;&nbsp; 
+&lt;<A>魔法师/@W</A>izard&gt;&nbsp;&nbsp;&nbsp; &lt;道士<A>/@Taos&gt;<A>\</A></A></P>
+<P>[@Warr]<BR>#if<BR>#act<BR>sendmsg 4 
+来自&lt;$IPLOCAL&gt;的玩家&lt;$USERNAME&gt;进入游戏！<BR>mapmove 0<BR>give 回城卷 1</P>
+<P>[@izard]<BR>#if<BR>#act<BR>sendmsg 4 
+来自&lt;$IPLOCAL&gt;的玩家&lt;$USERNAME&gt;进入游戏！<BR>mapmove 0<BR>give 回城卷 1</P>
+<P>[@Taos]<BR>#if<BR>#act<BR>sendmsg 4 
+来自&lt;$IPLOCAL&gt;的玩家&lt;$USERNAME&gt;进入游戏！<BR>mapmove 0<BR>give 回城卷 
+1</P>
+</BODY>
+</HTML>

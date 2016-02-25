@@ -1,0 +1,121 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{b071d08e-2a9e-4e40-b69c-4979535fcd8e}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup />
+  <ProjectExtensions>
+    <Borland.Personality>Default.Personality</Borland.Personality>
+    <Borland.ProjectType />
+    <BorlandProject>
+  <BorlandProject xmlns=""> <Default.Personality> </Default.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <Target Name="GameCenter">
+    <MSBuild Projects="EGameCenter\GameCenter.dproj" Targets="" />
+  </Target>
+  <Target Name="GameCenter:Clean">
+    <MSBuild Projects="EGameCenter\GameCenter.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="GameCenter:Make">
+    <MSBuild Projects="EGameCenter\GameCenter.dproj" Targets="Make" />
+  </Target>
+  <Target Name="DBServer">
+    <MSBuild Projects="EDBServer\DBServer.dproj" Targets="" />
+  </Target>
+  <Target Name="DBServer:Clean">
+    <MSBuild Projects="EDBServer\DBServer.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="DBServer:Make">
+    <MSBuild Projects="EDBServer\DBServer.dproj" Targets="Make" />
+  </Target>
+  <Target Name="LogDataServer">
+    <MSBuild Projects="ELogDataServer\LogDataServer.dproj" Targets="" />
+  </Target>
+  <Target Name="LogDataServer:Clean">
+    <MSBuild Projects="ELogDataServer\LogDataServer.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="LogDataServer:Make">
+    <MSBuild Projects="ELogDataServer\LogDataServer.dproj" Targets="Make" />
+  </Target>
+  <Target Name="LoginGate">
+    <MSBuild Projects="ELoginGate\LoginGate.dproj" Targets="" />
+  </Target>
+  <Target Name="LoginGate:Clean">
+    <MSBuild Projects="ELoginGate\LoginGate.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="LoginGate:Make">
+    <MSBuild Projects="ELoginGate\LoginGate.dproj" Targets="Make" />
+  </Target>
+  <Target Name="LoginSrv">
+    <MSBuild Projects="ELoginSrv\LoginSrv.dproj" Targets="" />
+  </Target>
+  <Target Name="LoginSrv:Clean">
+    <MSBuild Projects="ELoginSrv\LoginSrv.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="LoginSrv:Make">
+    <MSBuild Projects="ELoginSrv\LoginSrv.dproj" Targets="Make" />
+  </Target>
+  <Target Name="M2Server">
+    <MSBuild Projects="EM2Engine\M2Server.dproj" Targets="" />
+  </Target>
+  <Target Name="M2Server:Clean">
+    <MSBuild Projects="EM2Engine\M2Server.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="M2Server:Make">
+    <MSBuild Projects="EM2Engine\M2Server.dproj" Targets="Make" />
+  </Target>
+  <Target Name="RunGate">
+    <MSBuild Projects="ERunGate\RunGate.dproj" Targets="" />
+  </Target>
+  <Target Name="RunGate:Clean">
+    <MSBuild Projects="ERunGate\RunGate.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="RunGate:Make">
+    <MSBuild Projects="ERunGate\RunGate.dproj" Targets="Make" />
+  </Target>
+  <Target Name="SelGate">
+    <MSBuild Projects="ESelGate\SelGate.dproj" Targets="" />
+  </Target>
+  <Target Name="SelGate:Clean">
+    <MSBuild Projects="ESelGate\SelGate.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="SelGate:Make">
+    <MSBuild Projects="ESelGate\SelGate.dproj" Targets="Make" />
+  </Target>
+  <Target Name="IPLocal">
+    <MSBuild Projects="Plug-in\IPLocal\IPLocal.dproj" Targets="" />
+  </Target>
+  <Target Name="IPLocal:Clean">
+    <MSBuild Projects="Plug-in\IPLocal\IPLocal.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="IPLocal:Make">
+    <MSBuild Projects="Plug-in\IPLocal\IPLocal.dproj" Targets="Make" />
+  </Target>
+  <Target Name="zPlugOfShop">
+    <MSBuild Projects="Plug-in\PlugOfShop\zPlugOfShop.dproj" Targets="" />
+  </Target>
+  <Target Name="zPlugOfShop:Clean">
+    <MSBuild Projects="Plug-in\PlugOfShop\zPlugOfShop.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="zPlugOfShop:Make">
+    <MSBuild Projects="Plug-in\PlugOfShop\zPlugOfShop.dproj" Targets="Make" />
+  </Target>
+  <Target Name="zPlugOfEngine">
+    <MSBuild Projects="Plug-in\zPlugOfEngine\zPlugOfEngine.dproj" Targets="" />
+  </Target>
+  <Target Name="zPlugOfEngine:Clean">
+    <MSBuild Projects="Plug-in\zPlugOfEngine\zPlugOfEngine.dproj" Targets="Clean" />
+  </Target>
+  <Target Name="zPlugOfEngine:Make">
+    <MSBuild Projects="Plug-in\zPlugOfEngine\zPlugOfEngine.dproj" Targets="Make" />
+  </Target>
+  <Target Name="Build">
+    <CallTarget Targets="GameCenter;DBServer;LogDataServer;LoginGate;LoginSrv;M2Server;RunGate;SelGate;IPLocal;zPlugOfShop;zPlugOfEngine" />
+  </Target>
+  <Target Name="Clean">
+    <CallTarget Targets="GameCenter:Clean;DBServer:Clean;LogDataServer:Clean;LoginGate:Clean;LoginSrv:Clean;M2Server:Clean;RunGate:Clean;SelGate:Clean;IPLocal:Clean;zPlugOfShop:Clean;zPlugOfEngine:Clean" />
+  </Target>
+  <Target Name="Make">
+    <CallTarget Targets="GameCenter:Make;DBServer:Make;LogDataServer:Make;LoginGate:Make;LoginSrv:Make;M2Server:Make;RunGate:Make;SelGate:Make;IPLocal:Make;zPlugOfShop:Make;zPlugOfEngine:Make" />
+  </Target>
+</Project>

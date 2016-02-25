@@ -1,0 +1,57 @@
+MiTeC System Information Component REGISTRATION FORM
+====================================================
+Copyright © 1997-2003 by Michal Mutl
+All rights reserved
+
+CONTACT:
+ing. Michal Mutl
+Aubrechtove 3102,
+106 00 Praha 10,
+Czech Republic
+
+E-MAIL:
+<michal.mutl@mitec.cz>
+
+INTERNET:
+http://www.mitec.cz/
+----------------------------------------------------
+
+The cost of a site license is currently 110 EUR.
+This license permits development using MiTeC System Information Component by any
+number of persons at your place of work.
+You are granted a non-exclusive, royalty-free right to reproduce and
+redistribute executable files created using the Software (the "Executable
+Code") in conjunction with software products that you develop and/or market
+(the "Applications").
+The registered version with source code allows the user to produce any changes
+in the source code for personal use without agreement with the author.
+After registering you will get any further version of MiTeC System Information
+Component with sources for free.
+
+---------------------------------------------------------------------------------
+IF YOU CANNOT DELIVER ME YOUR E-MAIL ADDRESS I CANNOT SEND YOU REGISTERED VERSION
+---------------------------------------------------------------------------------
+
+REGISTER TO (all fields are required):
+
+Name:
+
+Street:
+
+City:
+
+ZIP:
+
+State:
+
+E-Mail:
+
+----------------------------------------------------
+
+PAYMENT DETAILS:
+
+You can use ShareIt (www.shareit.com) to order MiTeC System Information Component. 
+Product ID is #175109.
+
+I send you current version of MiTeC System Information Component with sources by e-mail,
+so don't forget deliver me your e-mail address.

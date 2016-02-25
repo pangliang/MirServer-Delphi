@@ -1,0 +1,40 @@
+MiTeC System Information Component
+==================================
+(aka MSystemInfo)
+
+Revised: 10/21/2003
+
+Copyright # 1997-2003 by Michal Mutl
+Aubrechtove 3102, 106 00 Praha 10, Czech republic
+<michal.mutl@mitec.cz>
+http://www.mitec.cz/
+
+LICENSE
+
+The cost of a site license is currently 110 EUR (details see Order.txt).
+This license permits development using MiTeC System Information Component by any
+number of persons at your place of work.
+You are granted a non-exclusive, royalty-free right to reproduce and
+redistribute executable files created using the Software (the "Executable
+Code") in conjunction with software products that you develop and/or market
+(the "Applications").
+The registered version with source code allows the user to produce any changes
+in the source code for personal use without agreement with the author.
+After registering you will get any further version of MiTeC System Information
+Component with sources for free.
+
+You may NOT:
+- rent or lease the Software.
+- sell any portion of the Software on its own, without integrating it into
+your Applications as Executable Code.
+
+THE AUTHOR DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE SOFTWARE WILL
+MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE SOFTWARE WILL BE
+UNINTERRUPTED OR ERROR FREE.
+IN NO EVENT SHALL THE AUTHOR, OR ANY OTHER PARTY WHO MAY HAVE DISTRIBUTED THE
+SOFTWARE, BE LIABLE FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL,
+OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+SOFTWARE (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED
+INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR FAILURE OF THE
+SOFTWARE TO OPERATE WITH ANY OTHER PRODUCTS), EVEN IF SUCH HOLDER OR OTHER
+PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.

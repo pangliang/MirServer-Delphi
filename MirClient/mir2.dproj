@@ -1,0 +1,129 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7d2587a3-d4d3-4112-9b6a-dfb931332457}</ProjectGuid>
+    <MainSource>mir2.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\MirServer\mir2.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Alignment>4</DCC_Alignment>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Hints>False</DCC_Hints>
+    <DCC_ExeOutput>..\MirServer</DCC_ExeOutput>
+    <DCC_DcuOutput>..\Build\Mir2\</DCC_DcuOutput>
+    <DCC_ObjOutput>..\Build\Mir2\</DCC_ObjOutput>
+    <DCC_HppOutput>..\Build\Mir2\</DCC_HppOutput>
+    <DCC_UnitSearchPath>J:\EGameOfMir\Component\DirectX;J:\EGameOfMir\Component\JSocket</DCC_UnitSearchPath>
+    <DCC_ResourcePath>J:\EGameOfMir\Component\DirectX;J:\EGameOfMir\Component\JSocket</DCC_ResourcePath>
+    <DCC_ObjPath>J:\EGameOfMir\Component\DirectX;J:\EGameOfMir\Component\JSocket</DCC_ObjPath>
+    <DCC_IncludePath>J:\EGameOfMir\Component\DirectX;J:\EGameOfMir\Component\JSocket</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+    <DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+    <DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+    <DCC_UNSAFE_CAST>True</DCC_UNSAFE_CAST>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_Alignment>4</DCC_Alignment>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_Optimize>False</DCC_Optimize>
+    <DCC_SymbolReferenceInfo>2</DCC_SymbolReferenceInfo>
+    <DCC_Hints>False</DCC_Hints>
+    <DCC_ExeOutput>..\MirServer</DCC_ExeOutput>
+    <DCC_DcuOutput>..\Build\Mir2\</DCC_DcuOutput>
+    <DCC_ObjOutput>..\Build\Mir2\</DCC_ObjOutput>
+    <DCC_HppOutput>..\Build\Mir2\</DCC_HppOutput>
+    <DCC_UnitSearchPath>..\Component\DirectX;..\Component\JSocket</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\Component\DirectX;..\Component\JSocket</DCC_ResourcePath>
+    <DCC_ObjPath>..\Component\DirectX;..\Component\JSocket</DCC_ObjPath>
+    <DCC_IncludePath>..\Component\DirectX;..\Component\JSocket</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+    <DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+    <DCC_UNSAFE_CAST>True</DCC_UNSAFE_CAST>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="RunParams">192.168.0.152</Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+      <VersionInfo Name="MajorVer">2</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">0</VersionInfo>
+      <VersionInfo Name="Debug">True</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">2052</VersionInfo>
+      <VersionInfo Name="CodePage">936</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName">飘飘网络</VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription">MirClient.exe</VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">2.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName">MirClient.exe</VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename">MirClient.exe</VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName">飘飘网络</VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">mir2.dpr</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="mir2.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="Actor.pas" />
+    <DCCReference Include="AxeMon.pas" />
+    <DCCReference Include="clEvent.pas" />
+    <DCCReference Include="ClFunc.pas" />
+    <DCCReference Include="cliUtil.pas" />
+    <DCCReference Include="ClMain.pas">
+      <Form>frmMain</Form>
+    </DCCReference>
+    <DCCReference Include="Common\EDcode.pas" />
+    <DCCReference Include="Common\Grobal2.pas" />
+    <DCCReference Include="DrawScrn.pas" />
+    <DCCReference Include="DWinCtl.pas" />
+    <DCCReference Include="FState.pas">
+      <Form>FrmDlg</Form>
+    </DCCReference>
+    <DCCReference Include="HerbActor.pas" />
+    <DCCReference Include="HUtil32.pas" />
+    <DCCReference Include="IntroScn.pas" />
+    <DCCReference Include="magiceff.pas" />
+    <DCCReference Include="MapUnit.pas" />
+    <DCCReference Include="Mpeg.pas" />
+    <DCCReference Include="MShare.pas" />
+    <DCCReference Include="PlayScn.pas" />
+    <DCCReference Include="SDK\SDK.pas" />
+    <DCCReference Include="Share.pas" />
+    <DCCReference Include="SoundUtil.pas" />
+    <DCCReference Include="WIL.pas" />
+    <DCCReference Include="wmUtil.pas" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>

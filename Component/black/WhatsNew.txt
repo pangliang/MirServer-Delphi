@@ -1,0 +1,317 @@
+Version 8.6.5 (06/17/2004)
+  * Minor bug fixes
+
+Version 8.6.4 (06/03/2004)
+  * CPU frequency calculating precised
+  * Fixed bug in TConnections (MiTeC_Shares.pas)
+  * Fixed special character coding in XML reports
+  * Fixed proxy detection
+
+Version 8.6.3 (04/23/2004)
+  * Fixed bug in TMonitor caused unreadable chars occurence in Monitor name
+  * Fixed problem with service listing under Win2003 server
+
+Version 8.6.2 (04/08/2004)
+  * Bug fixes
+  + Added detection for Intel Centrino (TCPU)
+
+Version 8.6.1 (03/30/2004)
+  * Bug fixes in TProcessList / TNetwork / TTCPIP
+
+Version 8.6 (03/25/2004)
+  * Bug fixes in TDMA / TSMBIOS / TDevices
+  + Added AMD Athlon 64, Athlon 64 FX and Opteron recognition (TCPU)
+  + Added Transmeta Efficeon recognition and smoother Crusoe numbering recognition (TCPU)
+  * TNetwork.Adapters property splitted to two ones: VirtualAdapters and Physical Adapters. 
+    Property NetworkCard and CardAdapterIndex was removed.
+  * TOperatingSystem.ProxyServer property type changed to TStrings.
+  + Added OpenGL, Internet Explorer and .NET Framework version detection (TEngines).
+  + TProcessList is now fully implemented
+    + Added property HandleCount, Handle (NT only)
+    + Added property DriverCount, Driver (NT only)
+    + Added property ServiceCount, Service (NT only)
+    + Added property WindowCount, Window 
+    + Added property ThreaCount
+  + Added new application Process Viewer (demonstrates all possibilities of TProcessList)
+  + In design time the Refresh method is not called automatically, see new property _Refresh
+  + Categorized properties (D6,D7)
+  
+Version 8.5 (11/06/2003)
+  * Error handling is now conditionally defined
+  + Added NetBIOS API unit (MiTeC_NetBIOS.pas)
+  + Added VendorID,DeviceID,SubSysID and Revision to TDevice record (MSI_Devices.pas)
+  + Added new subclass TMonitor (MSI_Monitor.pas) with Monitor detection (EDID)
+
+Version 8.4 (10/10/2003)
+  * New error handling and journaling (MSI_ExceptionStack.pas)
+  * Fixed bug in TDevices.Report (bugs in XML formatting and syntax)
+  * Fixed bug in TDMA/TSMBIOS (exception under non admin rights under NT, reading only first 256 bytes of 64K memory block)
+  * Fixed bug in TStorage (now can detect fixed drives under NT without admin rights)
+  * Added Memory Devices enumeration in TSMBIOS amd bug fixes
+
+Version 8.3 (19/8/2003)
+  + (Re)Added "load from file" possibility to TDMA/TSMBIOS
+  + Added USB devices enumeration (MiTeC_USB.pas, MSI_USB.pas) + new demo
+  + Added new process enumeration (MSI_Processes) + new demo
+  + Added HotFixes for NTSpecific info in TOperatingSystem
+  + Added On-Board Devices evaluation in TSMBIOS
+  + Added SMBIOS 2.3.4 compatibility
+  + Added detection of AMD Opteron, Intel PM, NSC and SiS processors
+  + Added software version in TSoftware
+  - Removed files MiTeC_EnumNT, MiTeC_Enum9x, MiTeC_PerfLibNT, MiTeC_PerfLib9x, MiTeC_ToolHelp32
+  * CompInfo application completely rewritten and renamed to MSI
+  * Storage devices enumeration rewritten (MSI_IDE/TIDE renamed to MSI_Storage/TStorage) + new demo
+  * Fixed bugs in OS detection
+  * Most of memory leaks removed
+  
+
+Version 8.2 (04/09/2003)
+  * Fixed CPU Cache detection bug
+  * Fixed CPU speed detection ("division by zero" error)
+  * Fixed bug in SMBIOS under VMware
+  * Extended and precised SMBIOS detection 
+  * OS detection precised (Windows Server 2003 etc. support added)
+  + Added East Europe charset support in XML report 
+  + Added GetCPUUsage function to MSIC.DLL
+  + TDMA extended to override administration privileges need under NT
+
+Version 8.1 (03/24/2003)
+  * Bug fixes (TCPU, TMemory)
+  * XML bug fixed
+  + Added ShadeBlend and ColorManagement display capabilities enum, Video BIOSString,
+    Physical video size and Device Driver Version properties (TDisplay)
+  + New Direct Memory Access component (MSI_DMA) + Demo4
+    + ROM BIOS Explorer rewritten
+  + SMBIOS completely rewritten using TDMA
+  + TMStorageDevices rewritten, renamed to TIDE (MSI_IDE.pas) and included to MSystemInfo
+  + Added resource enumeration for devices (only NT) (TDevices)
+    + Redesigned Devices report
+  + New demos  
+  + Added System Overview page to Report Viewer
+  + Added interface file for MSIC.DLL and simplified function calling
+
+Version 8.0 (02/24/2003)
+  * Many bugs fixed
+  + Full startup enumeration (TStartup)
+  + Added HDD info evaluation from registry (TMStorageDevices)
+    + New demo for TMStorageDevices
+  * CPU detection precised (Intel, AMD)
+  + Added Intel Itanium, Northwood and Prestonia support (TCPU)
+  + Added CPU architecture flag (TCPU)
+  + Reports are rewritten to XML output.
+  + Added standalone XML Report Viewer
+  + Added VerticalRefreshRate detection (NT only) (TDisplay)
+  + Added Windows .NET recognition (TOperatingSystem)
+  - Removed ControlPanel Applet application
+  + Added MSIC.DLL for access to MSI data from any application (see Demo)
+    
+-------------------------------------------------------------------------------  
+      
+Version 7.73 (11/11/2002)
+  + Added Startup evaluation in SYSTEM.INI (TStartup).
+  * Handle Memory Controller Information specially as some BIOSes (Award Modular BIOS v4.51PG, P6BX-A+ Ver 3.2c, 11/28/1998) (TSMBIOS).
+    (it caused bad memory module recognition)
+  * Fixed bug in DAO/ADO version detection (MSI_Engines)
+  * Bug fixes
+
+Version 7.72.1 (09/16/2002)
+  + Delphi 7 compatibility
+
+Version 7.72 (09/16/2002)
+  + Extended memory detection in TSMBIOS (if table 6 does not get info, using table 17)
+  + Added support for Mobile Tualatin (TCPU)
+  * Memory leaks in MSI_Network removed and list index bug fixed
+  * Fixed all "silent exceptions" (i hope) thrown when "Stop On Delphi exception" in IDE is set on.
+
+Version 7.71 (09/11/2002)
+  * Minor bug fixes
+
+Version 7.7 (08/29/2002)
+  + Added interface for some undocumented native Win API (MiTeC_Native.pas)
+  + Added unit for shell extensions (context menu command, file type associations...) (MSI_Shell.pas)
+  + Added HDD Serial, Model and Revision number and geometry info detection as standalone component (TMStorageDevices in MSI_SD.pas)
+  * Package split to runtime and designtime part
+  * Many bug fixes (TSMBIOS, TPrinters, TTimeZone, TDisplay, TNetwork etc.)
+
+Version 7.62 (04/18/2002)
+  * Reimplemented CPU detection part (TCPU)
+    * many properties added or renamed
+    + added Intel Willamette, Transmeta Crusoe and VIA C3 processors support (TCPU)
+  + Reimplemented CPU Cache detection (TCPUCache)
+    * fixed Intel cache detection
+    * added support for AMD Duron and AMD Athlon Level 2 Cache detection and description
+  + Added Hyper-Threading Technology cpu feature flag detection (TCPUFeatures)
+  + Enhanced SMBIOS Table Access (TSMBIOS)
+  * Fixed bugs in TCP/IP configuration detection (TTCPIP)
+
+Version 7.61 (04/09/2002)
+  + Re-added BIOS detection (TBIOS in MSI_Machine.pas)
+  * TCP/IP detection bug fixes and enhancements (TTCPIP)
+  * Display detection bug fix (TDisplay)
+
+Version 7.6 (04/08/2002)
+  * SMBIOS bug fixes
+  + More SMBIOS details enumerated
+  + Added TCP/IP configuration detection (TTCPIP in MSI_Network.pas, MiTec_IpHlpAPI.pas)
+
+Version 7.5 (03/18/2002)
+  * SMBIOS si now read under any type of account in NT systems, not only Local Admin.
+
+
+Version 7.4 (03/04/2002)
+  + Added SMBIOS/DMI enumeration (TSMBIOS in MSI_SMBIOS.pas) - TMachine reimplemented
+  + New application ROM BIOS Explorer added
+  * Resources info moved to separate object TResources (MSI_Machine.pas)
+  * Minor fixes
+
+Version 7.32 (02/26/2002)
+  * MSI_Overview.pas and MSI_DetailDlg.pas added to package to prevent compilation
+    problems under Delphi 5 Enterprise
+
+Version 7.31 (02/19/2002)
+  * Fixed some memory leaks (TMachine)
+
+Version 7.3 (02/14/2002)
+  + Reimplemented Win9x resources detection, now available under all platforms. (TMemory)
+  + System Overview dialog is now live (dynamically shows memory, resources, cpu usage etc.)
+  + Added new unit MiTeC_Params managing application parameters
+  * MiTeC_Routines splitted to MiTeC_Dialogs, MiTeC_StrUtils, MiTeC_Datetime
+
+Version 7.2 (02/05/2002)
+  + Added AMD Athlon/Duron recognition (TCPU)
+  + Extended console demo application
+  + Reimplemented device detecting under Win9x (TDevices)
+
+Version 7.1 (01/08/2002)
+  + Added more info in ASPI32 configuration
+  + Added Locale information (TLocaleInfo in MSI_OS)
+
+Version 7.0 (01/04/2002)
+!!!! SOURCES ARE AVAILABLE ONLY ON PURCHASE/REGISTRATION NOW!!!!!!!!
+  + Added Intel Cache Description (TCPU)
+  + Added DS,ACPI,TM,SSE2,SS,CLFSH cpu features detection (TCPU)
+  * Fixed Pentium III/Celeron and OverDrive recognition (TCPU)
+  + Added Process Enumeration (MSI_EnumNT, MSI_Enum9x)
+  + Added Service Enumeraton for NT (MSI_EnumNT, MiTeC_AdvAPI)
+  + Added Driver Enumeration for NT (MSI_EnumNT, MiTeC_AdvAPI)
+  + Added Account Enumeration for NT (MSI_AccountsNT)
+  + Added Scheduled Task enumeration for NT (MiTeC_JobsNT)
+  + Added Event Log enumeration for NT (MiTeC_EventLogNT)
+  + Added ASPI32 Configuration detection (MiTeC_WnASPI32, MSI_Engines)
+  * MSI_DirectX removed, TDirectX moved to TEngines (MSI_Engines)
+  + New demos
+  
+-------------------------------------------------------------------------------  
+
+Version 6.4 (11/13/2001)
+  * Minor fixes
+  * Added TMachine.DELL_ServiceTag for DELL machines
+
+Version 6.3 (10/12/2001)
+  * Many XP and bug fixes
+  * TSoftware.Installed property renamed to TSoftware.Products
+  + Added uninstall string info for installed software (TSoftware.Uninstalls)
+
+
+Version 6.2 (08/16/2001)
+  + ASPI version detection added (TEngines)
+  + Added sharepoints, sessions and open files enumeration (MiTeC_Shares.pas)
+  * Minor code changes
+
+Version 6.1 (08/13/2001)
+  + Added some internet settings (TOperatingSystem.TInternet)
+  + Added ExceptionMode property to some comps to decide what to do when exception is thrown during refresh
+  * Minor bug fixes
+
+Version 6.0 (07/24/2001)
+!!!! DEVELOPMENT AND COMPATIBILITY FOR DELPHI 2,3,4 HAS BEEN ENDED!!!!!!!!
+  * Minor bug fixes
+  + Delphi 6 compatible (all read-only properties are now really read-only, be sure to configure
+                         Object Inspector to show them)
+  + Added new object TMSI (like TMSystemInfo but no editors and no components) for using
+    in console applications (MSI_Console.pas)
+  + TMSystemInfo moved to new unit MSI_GUI.pas (MSystemInfo.pas contains only register and editors code now)
+  
+-------------------------------------------------------------------------------  
+
+Version 5.6 (06/26/2001)
+  + Added Performance Library objects (NT & 9x)
+  + Added Microsoft ADO detection (TEngines)
+  + Added NT Service Pack 6a detection (TOperatingSystem)
+  + Added Windows XP detection (TOperatingSystem)
+  + Added DVD Region detection (TOperatingSystem, only >Win95)
+  + Added Product Key and Product ID (TOperatingSystem)
+  + TPrinters reimplemented and Port info added
+  * Memory leaks removed (except in TPerfLibNT. There's over 2000 leaks and i have no idea to remove it.
+                          Can anybody help?)
+
+Version 5.5 (06/11/2001)
+  * Fixed bug in TDisk.SetDisk causing bad UNC displaying
+  * Fixed bug in TDisplay.GetInfo causing AV
+  * Fixed TMCPUUsage under Win9x
+
+Version 5.4 (05/31/2001)
+ * Fixed bug in TStartup causing Access violation.
+ + Added apps run from WIN.INI in TStartup.
+ + Added new component TMCPUUsage for CPU usage watching.
+
+Version 5.3 (05/14/2001)
+ * Control Panel applet renamed to MSI.cpl
+ * CPU Cache and CPUID detection bugs fixed in TCPU.
+ * TMedia now enumerates all sound devices.
+ * TDisk.DriveType property renamed to MediaType.
+ * Network, Sound and Display properties detecting reimplemented and fixed (now TDevices is used to obtain installed adapters).
+ * TDisplay.Adapters reanemd to TDisplay.Adapter and cast to string.
+ * TDisplay.DACs renamed to TDisplay.DAC and cast to string.
+ * TDisplay.Chipsets renamed to TDisplay.Chipset and cast to string.
+ * TDisplay.Memories renamed to TDisplay.Memory and cast to integer.
+ + Pentium IV detection added in TCPU.
+ + Added Startup programs enumeration (TStartup).
+ + Added installed software enumeration (TSoftware).
+ + Added Windows NT and 2000 specific information in TOperatingSystem (TNTSpecific).
+ + TNetword.CardAdapterIndex property added. Identifies what item in TNetwork.Adapters is physical network card.
+ + TMedia.GamePortIndex property added. Identifies what item in TMedia.Devices is GamePort.
+ + TMedia.SoundCardIndex property added. Identifies what item in TMedia.Devices is physical sound card.
+ - TDisplay.Accelerators property removed (it seems to be never used).
+ - TCPU.BusSpeed property removed (this value was only estimated and in many causes was wrong).
+ - TDisk.Model property removed (never used).
+
+Version 5.2 (03/16/2001)
+ + Added component and property editor
+ + Added Microsoft DAO detection
+ + Added process enumeration
+ + Added NT product type identification
+ + Added Control Panel applet based on this component
+ * Report format changed
+ * CPU Cache detection reimplemented
+
+Version 5.1
+ + Enhanced CPU name recognition
+ + Fixed bugs in device detection
+
+Version 5.0
+ + Reimplemented and rearranged CPU detection
+ + Added device class recognition
+ + Fixed bugs in device detection
+ + Demo application rearranged
+ * Source split to more files
+ 
+-------------------------------------------------------------------------------  
+
+Version 4.5
+ + Reimplemented device detection. Now all installed devices are detected
+ - TDevices published properties removed except Printers (renamed)
+ + New TDevices public property DeviceCount and Devices[Index] added
+ + Delphi 3 compatibility forced
+
+Version 4.4
+ + Reimplemented CPU features detection
+ + Added new CPU features detection (3D Now!, SIMD...)
+ * All TCPUFeatures properties renamed
+ + Added TCPU properties VendorID_Raw and Vendor_Raw
+
+Version 4.3
+ + Added additional device detection (Infrared, Image, Tape...)
+ + Fixed some user reported bugs
+
+Previous releases were not documented.

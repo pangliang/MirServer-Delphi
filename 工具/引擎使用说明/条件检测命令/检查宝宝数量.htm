@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>检查宝宝数量</TITLE>
+</HEAD>
+<BODY>
+<P><FONT size=2><FONT 
+color=#0000ff><STRONG>功能：</STRONG></FONT><BR>&nbsp;&nbsp;&nbsp; 
+可以检查玩家所带宠物的数量。</FONT></P>
+<P><FONT size=2><STRONG><FONT 
+color=#0000ff>格式：</FONT><BR>
+</STRONG>CHECKSLAVECOUNT&nbsp; 控制符&nbsp; 
+&lt;.=.&gt;&nbsp; 
+数量 <font color="#FF0000"><strong>支持变量操作</strong></font><BR>
+<BR>;==========================================<BR>;检查宝宝数量是否为指定数量<BR>[@checkslavecount0]<BR>#IF<BR>#ACT<BR>&nbsp; 
+CHECKSLAVECOUNT = 
+5<BR>#SAY<BR>你的宝宝数量为5个。<BR>#ELSESAY<BR>你的宝宝数量不为5个。<BR>;==========================================<BR><BR>;==========================================<BR>;检查宝宝数量是否为大于数量<BR>[@checkslavecount1]<BR>#IF<BR>#ACT<BR>&nbsp; 
+CHECKSLAVECOUNT &gt; 
+5<BR>#SAY<BR>你的宝宝数量超过5个。<BR>#ELSESAY<BR>你的宝宝数量不超过5个。<BR>;==========================================<BR><BR>;==========================================<BR>;检查宝宝数量是否为小于数量<BR>[@checkslavecount2]<BR>#IF<BR>#ACT<BR>&nbsp; 
+CHECKSLAVECOUNT &lt; 
+5<BR>#SAY<BR>你的宝宝数量小于5个。<BR>#ELSESAY<BR>你的宝宝数量不小于5个。<BR>;==========================================</FONT></P>
+</BODY>
+</HTML>

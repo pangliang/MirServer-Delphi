@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>收徒脚本</TITLE>
+</HEAD>
+<BODY>
+<P><FONT size=2>收徒脚本<BR><BR>[@main]<BR>&lt;我想拜师/@master&gt;\<BR>&lt;我想出师/@unmaster&gt;\ 
+\<BR>&lt;离开/@exit&gt;<BR><BR>[@master]<BR>想拜师呀，你要拜的师父来了没有？\<BR>与你师父面对面站好，开始拜师。\ 
+\<BR>&lt;准备好了/@agree&gt;\<BR>&lt;我知道了/@exit&gt;\ \ 
+<BR>&lt;返回/@main&gt;<BR><BR>[@agree]<BR>;检查是不是已经是别人的师父<BR>#if<BR>&nbsp;&nbsp; 
+checkismaster<BR>#act<BR>&nbsp;&nbsp; break<BR>#say<BR>没事别来这玩！！！\ 
+\<BR>&lt;返回/@main&gt;<BR><BR>;检查是不是已经拜师了<BR>#if<BR>&nbsp;&nbsp; 
+checkmaster<BR>#act <BR>&nbsp;&nbsp; break<BR>#say<BR>你都都已经拜了别人为师，怎么还拜师！！！ \ 
+\<BR>&lt;返回/@main&gt;<BR><BR>;检查对面的人物是不是别人的徒弟<BR>#if<BR>&nbsp;&nbsp;checkposemaster<BR>#say<BR>你找了个什么人做师父，怎么现在还是别人的徒弟？\ 
+\<BR>&lt;返回/@main&gt;<BR>#act<BR>&nbsp;&nbsp;break<BR><BR>;检查二个有没站好位置<BR>#if<BR>&nbsp;&nbsp; 
+checkposedir<BR>#elsesay<BR>你们二个面对面站好呀，不要乱动。\ 
+\<BR>&lt;返回/@main&gt;<BR>#elseact<BR>&nbsp;&nbsp;break<BR><BR>#if<BR>&nbsp;&nbsp;checklevel 
+40<BR>#say<BR>你都40多级了还要找师父？\ 
+\<BR>&lt;返回/@main&gt;<BR>#act<BR>&nbsp;&nbsp;break<BR><BR>;检查对方等级<BR>#if<BR>&nbsp;&nbsp;checkposelevel 
+&gt; 50<BR>#elsesay<BR>你找个什么师父呀，等级这么低？\ 
+\<BR>&lt;返回/@main&gt;<BR>#elseact<BR>&nbsp;&nbsp;break<BR>#act<BR>&nbsp;&nbsp; 
+master<BR><BR>[@StartGetMaster]<BR>拜师仪式正式开始。\ \<BR>你是否确认拜师？\ 
+\<BR>&lt;确认/@RequestMaster&gt;<BR><BR>[@StartMaster]<BR>拜师仪式正式开始。\ 
+\<BR>对方已经向你提出拜师请求。\ \<BR><BR><BR>[@RequestMaster]<BR><BR>;检查所需物品<BR>#if 
+<BR>&nbsp;&nbsp; checkitemw 力量戒指 1<BR>#elsesay<BR>你都没信物，怎么拜呀！！！\ 
+\<BR>&lt;返回/@main&gt;<BR>#elseact<BR>&nbsp;&nbsp; 
+break<BR><BR>#if<BR>#act<BR>&nbsp;&nbsp; takew 力量戒指 1<BR>&nbsp;&nbsp; master 
+requestmaster<BR><BR>[@WateMaster]<BR>你已向对方请求拜师，请耐心等待对方的答复。<BR><BR>[@RevMaster]<BR>对方想拜你为师，你是否想收此人为徒？ 
+\ \<BR>&lt;同意/@ResposeMaster&gt; 
+\<BR>&lt;不同意/@ResposeMasterFail&gt;<BR><BR>[@ResposeMaster]<BR>#if<BR>#act<BR>&nbsp;&nbsp;master 
+responsemaster 
+ok<BR><BR>[@ResposeMasterFail]<BR>#if<BR>#act<BR>&nbsp;&nbsp;master 
+responsemaster fail<BR>[@EndMaster]<BR>你们二个已经是师徒关系了。\ 
+\<BR>&lt;关闭/@exit&gt;<BR>[@EndMasterFail]<BR>拜师失败！\ 
+\<BR>&lt;关闭/@exit&gt;<BR>[@MasterDirErr]<BR>对方没站好位置<BR><BR>[@MasterCheckDir]<BR>请站好位置\\<BR><BR>[@HumanTypeErr]<BR>此人不可以做你的师父。<BR><BR><BR><BR><BR><BR><BR>;==========================================<BR>开始<BR>[@unmaster]<BR>#if<BR>&nbsp;&nbsp; 
+havemaster<BR>#act<BR>&nbsp;&nbsp; unmaster<BR>#elsesay<BR>你都没师父，跑来做什么？？\ 
+\<BR>&lt;返回/@main&gt;<BR><BR><BR>;=======================================================<BR><BR>[@UnMasterCheckDir]<BR>按正常出师步骤，必须二个人对面对站好位置，\<BR>如果人来不了你只能选择强行出师了。\ 
+\<BR>&lt;我要强行出师/@fUnMaster&gt;\<BR>&lt;返回/@main&gt;<BR>;=======================================================<BR>;对面位置不是人物时显示的信息<BR>[@UnMasterTypeErr]<BR>你对面站了个什么东西，怎么不太象人来的。\ 
+\<BR>&lt;返回/@main&gt;<BR>[@UnIsMaster]<BR>必须由徒弟发出请求！！！\ 
+\<BR>&lt;返回/@main&gt;<BR>[@UnMasterError]<BR>不要来捣乱！！！\ 
+\<BR>&lt;返回/@main&gt;<BR>;=======================================================<BR>;开始程序后，双方显示的信息<BR>[@StartUnMaster]<BR>出师仪式现在开始！！！\ 
+\<BR>是否确定真的要脱离师徒关系？\ 
+\<BR>&lt;确定/@RequestUnMaster&gt;<BR>[@WateUnMaster]<BR>出师仪式现在开始！！！\ 
+\<BR><BR>;=======================================================<BR>;发出请求<BR>[@RequestUnMaster]<BR>#if<BR>&nbsp;&nbsp;havemaster<BR>#act<BR>&nbsp;&nbsp;unmaster 
+requestunmaster<BR>;=======================================================<BR>;回应请求<BR>[@ResposeUnMaster]<BR>#if<BR>&nbsp;&nbsp;havemaster<BR>#act<BR>&nbsp;&nbsp;unmaster 
+responseunmaster<BR><BR>;===============================================<BR>;请求后显示的信息<BR>[@WateUnMaster]<BR>你已向对方发出请求，请耐心等待对方的答复。<BR><BR>;===============================================<BR>;请求后对方显示的信息<BR>[@RevUnMaster]<BR>对方向你请求，你是否答应？ 
+\ 
+\<BR>&lt;我愿意/@RequestUnMaster&gt;<BR>&lt;返回/@main&gt;<BR><BR>;===============================================<BR><BR>[@ExeMasterFail]<BR>你都没师父，跑来做什么？ 
+\ 
+\<BR>[返回/@main]<BR><BR>;==============================================<BR>;强行<BR>[@fUnMaster]<BR>#if<BR>&nbsp;&nbsp;checkitem 
+金条 1<BR>&nbsp;&nbsp;havemaster<BR>#act<BR>&nbsp;&nbsp;take 金条 
+1<BR>&nbsp;&nbsp;unmaster requestunmaster 
+force<BR>#elsesay<BR>要收一根金条的手续费，你没有金条，\<BR>&lt;确定/@exit&gt;<BR>;==============================================<BR>;完成后的提示信息<BR>[@UnMasterEnd]<BR>呵呵，你已经脱</FONT></P>
+</BODY>
+</HTML>

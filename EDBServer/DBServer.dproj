@@ -1,0 +1,140 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{41715e2f-c44e-489f-975e-3a4700551222}</ProjectGuid>
+    <MainSource>DBServer.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>..\MirServer\DBServer\DBServer.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_ExeOutput>..\MirServer</DCC_ExeOutput>
+    <DCC_DcuOutput>..\Build\DBServer</DCC_DcuOutput>
+    <DCC_ObjOutput>..\Build\DBServer</DCC_ObjOutput>
+    <DCC_HppOutput>..\Build\DBServer</DCC_HppOutput>
+    <DCC_UnitSearchPath>D:\EGameOfMir\Component\JSocket</DCC_UnitSearchPath>
+    <DCC_ResourcePath>D:\EGameOfMir\Component\JSocket</DCC_ResourcePath>
+    <DCC_ObjPath>D:\EGameOfMir\Component\JSocket</DCC_ObjPath>
+    <DCC_IncludePath>D:\EGameOfMir\Component\JSocket</DCC_IncludePath>
+    <DCC_Define>RELEASE</DCC_Define>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_ExeOutput>..\MirServer\DBServer</DCC_ExeOutput>
+    <DCC_DcuOutput>..\Build\DBServer</DCC_DcuOutput>
+    <DCC_ObjOutput>..\Build\DBServer</DCC_ObjOutput>
+    <DCC_HppOutput>..\Build\DBServer</DCC_HppOutput>
+    <DCC_UnitSearchPath>..\Component\JSocket</DCC_UnitSearchPath>
+    <DCC_ResourcePath>..\Component\JSocket</DCC_ResourcePath>
+    <DCC_ObjPath>..\Component\JSocket</DCC_ObjPath>
+    <DCC_IncludePath>..\Component\JSocket</DCC_IncludePath>
+    <DCC_Define>DEBUG</DCC_Define>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+      <VersionInfo Name="MajorVer">1</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">0</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">2052</VersionInfo>
+      <VersionInfo Name="CodePage">936</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">DBServer.dpr</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="DBServer.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="..\Common\Common.pas" />
+    <DCCReference Include="..\Common\Grobal2.pas" />
+    <DCCReference Include="..\Common\HUtil32.pas" />
+    <DCCReference Include="..\Common\MudUtil.pas" />
+    <DCCReference Include="AddrEdit.pas">
+      <Form>FrmEditAddr</Form>
+    </DCCReference>
+    <DCCReference Include="CreateChr.pas">
+      <Form>FrmCreateChr</Form>
+    </DCCReference>
+    <DCCReference Include="CreateId.pas">
+      <Form>FrmCreateId</Form>
+    </DCCReference>
+    <DCCReference Include="DBShare.pas" />
+    <DCCReference Include="DBSMain.pas">
+      <Form>FrmDBSrv</Form>
+    </DCCReference>
+    <DCCReference Include="DBTools.pas">
+      <Form>frmDBTool</Form>
+    </DCCReference>
+    <DCCReference Include="EDCode.pas" />
+    <DCCReference Include="EditRcd.pas">
+      <Form>frmEditRcd</Form>
+    </DCCReference>
+    <DCCReference Include="FDBexpl.pas">
+      <Form>FrmFDBExplore</Form>
+    </DCCReference>
+    <DCCReference Include="FIDHum.pas">
+      <Form>FrmIDHum</Form>
+    </DCCReference>
+    <DCCReference Include="frmcpyrcd.pas">
+      <Form>FrmCopyRcd</Form>
+    </DCCReference>
+    <DCCReference Include="HumDB.pas" />
+    <DCCReference Include="IDSocCli.pas">
+      <Form>FrmIDSoc</Form>
+    </DCCReference>
+    <DCCReference Include="RouteEdit.pas">
+      <Form>frmRouteEdit</Form>
+    </DCCReference>
+    <DCCReference Include="RouteManage.pas">
+      <Form>frmRouteManage</Form>
+    </DCCReference>
+    <DCCReference Include="Setting.pas">
+      <Form>FrmSetting</Form>
+    </DCCReference>
+    <DCCReference Include="TestSelGate.pas">
+      <Form>frmTestSelGate</Form>
+    </DCCReference>
+    <DCCReference Include="UsrSoc.pas">
+      <Form>FrmUserSoc</Form>
+    </DCCReference>
+    <DCCReference Include="viewrcd.pas">
+      <Form>FrmFDBViewer</Form>
+    </DCCReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>

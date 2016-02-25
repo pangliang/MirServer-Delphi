@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>禁止登录列表</TITLE>
+</HEAD>
+<BODY>
+<P><STRONG><FONT size=5>禁止登录列表</FONT></STRONG><BR><BR><FONT 
+size=2>&nbsp;&nbsp;&nbsp; 
+此列表主要用于封闭一些在游戏中捣乱的人物，禁止这些人物进入游戏，封闭有登录IP、登录帐号、人物名称三种方法，临时、永久封闭二种模式。GM管理员根据实际情况灵活应用。<BR><BR>临时模式，主要用于临时封闭，在服务器端重启后就不起作用了。<BR>永久模式，主要用于永久封闭，这些记录会保存在服务器端里，服务器端重启后会重新读取这些记录。</FONT><BR><BR><FONT size=4><STRONG>禁止登录IP：<BR></STRONG><FONT 
+size=3><FONT 
+size=2>&nbsp;&nbsp;&nbsp; 
+将指定登录IP加入禁止列表后，所有以此IP登录的人物进入游戏时会出现红字提示，并踢除下线，已经在线的人物不受影响，但下线再上就被禁止了。</FONT><BR></FONT></FONT><FONT 
+size=3><STRONG>命令格式：<BR></STRONG></FONT><FONT 
+size=2>加入列表：@DenyIPLogon IP地址 
+是否永久禁止(0、1)<BR>删除列表：@DelDenyIPLogon 
+IP地址<BR>显示列表：@ShowDenyIPLogon<BR><BR>0代表临时禁止，1代表永久禁止，此命令必须有GM权限；</FONT></P>
+<P><STRONG><FONT 
+size=4>禁止登录帐号：<BR></FONT></STRONG><FONT 
+size=2>&nbsp;&nbsp;&nbsp; 
+将指定登录帐号加入禁止列表后，用此帐号登录的人物进入游戏时会出现红字提示，并踢除下线，已经在线的人物不受影响，但下线再上就被禁止了。</FONT><BR><STRONG>命令格式：<BR></STRONG><FONT size=2>加入列表：@DelDenyAccountLogon 
+登录帐号 是否永久禁止(0、1)<BR>删除列表：@DelDenyAccountLogon 
+登录帐号<BR>显示列表：@ShowDenyAccountLogon<BR><BR>0代表临时禁止，1代表永久禁止，此命令必须有GM权限；</FONT></P>
+<P><STRONG><FONT 
+size=4>禁止登录人物：<BR></FONT></STRONG><FONT 
+size=2>&nbsp;&nbsp;&nbsp; 
+将指定人物名称加入禁止列表后，登录此人物进入游戏时会出现红字提示，并踢除下线，已经在线的人物不受影响，但下线再上就被禁止了。<BR></FONT><STRONG>命令格式：<BR></STRONG><FONT size=2>加入列表：@DenyCharNameLogon 
+人物名称 是否永久禁止(0、1)<BR>删除列表：@DelDenyCharNameLogon 
+人物名称<BR>显示列表：@ShowDenyCharNameLogon<BR><BR><FONT 
+color=#0000ff>0代表临时禁止，1代表永久禁止，此命令必须有GM权限；</FONT></FONT></P>
+</BODY>
+</HTML>

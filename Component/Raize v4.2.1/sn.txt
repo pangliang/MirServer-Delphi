@@ -1,0 +1,15 @@
+[info]
+name=Raize
+ver=4.2.1
+author=
+web=http://www.raize.com/ 
+devtool=BCB/Delphi/BDS
+sn=900-177454
+fullsource=1
+desc=Raize Components 包含了 90 个 Delphi 和 C++ Builder 的控件组，它的一些特点如：制定窗体框架、高级的编辑控件等都使开发者很容易的设计出灵活的、自己喜欢的样式的应用程序。
+
+sn:
+900-177454
+900-413480
+900-728540
+

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>装备名称自定义系统</TITLE>
+</HEAD>
+<BODY>
+<P><FONT size=2>功能：<BR>&nbsp;&nbsp;&nbsp; 
+装备名称自定义系统</FONT></P>
+<P><FONT size=2>格式：<BR>&nbsp;&nbsp;&nbsp; 例脚本：</FONT></P>
+<P><FONT size=2> 
+(@@useitemname)<BR>[@main]<BR>请选择要改名的装备：(将要改名的装备戴身上)\<BR>┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\<BR>◇◇◇『&lt;盔　甲</FONT><A><FONT 
+size=2>/@@useitemname0</FONT></A><FONT size=2>&gt;』◇◇◇『&lt;武　器</FONT><A><FONT 
+size=2>/@@useitemname1</FONT></A><FONT 
+size=2>&gt;』◇◇◇\<BR>◇◇◇『&lt;项　链</FONT><A><FONT 
+size=2>/@@useitemname3</FONT></A><FONT size=2>&gt;』◇◇◇『&lt;头　盔</FONT><A><FONT 
+size=2>/@@useitemname4</FONT></A><FONT 
+size=2>&gt;』◇◇◇\<BR>◇◇◇『&lt;左手镯</FONT><A><FONT 
+size=2>/@@useitemname5</FONT></A><FONT size=2>&gt;』◇◇◇『&lt;右手镯</FONT><A><FONT 
+size=2>/@@useitemname6</FONT></A><FONT 
+size=2>&gt;』◇◇◇\<BR>◇◇◇『&lt;左戒指</FONT><A><FONT 
+size=2>/@@useitemname8</FONT></A><FONT size=2>&gt;』◇◇◇『&lt;右戒指</FONT><A><FONT 
+size=2>/@@useitemname7</FONT></A><FONT size=2>&gt;』◇◇◇\<BR>◇◇◇『&lt;勋&nbsp; 
+章</FONT><A><FONT size=2>/@@useitemname2</FONT></A><FONT 
+size=2>&gt;』\<BR>┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\<BR>〖&lt;返回/@main&gt;〗 
+〖&lt;关闭</FONT><A><FONT size=2>/@exit</FONT></A><FONT 
+size=2>&gt;〗<BR>[@@useitemname0]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname1]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname2]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname3]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname4]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname5]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname6]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname7]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname8]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname9]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname10]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname11]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@@useitemname12]<BR>#ACT<BR>&nbsp;goto 
+@ChangeName<BR>[@ChangeName]<BR>#if<BR>&nbsp; checkgamegold &gt; 
+0<BR>#act<BR>&nbsp; gamegold - 1<BR>&nbsp; SETSCRIPTFLAG 1 1<BR>&nbsp; sendmsg 7 
+改名成功！！！<BR>&nbsp; Close</FONT><FONT size=2><BR>#elseact<BR>&nbsp; sendmsg 7 
+没钱跑来做什么？</FONT></P>
+</BODY>
+</HTML>

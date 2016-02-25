@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>泡点功能详解</TITLE>
+</HEAD>
+<BODY>
+<P><FONT size=2><FONT 
+color=#0000ff><STRONG>泡点功能：</STRONG></FONT><BR>&nbsp;&nbsp;&nbsp; 
+可以实现人物在线时间隔指定时间自动得到指定游戏点数，这些点数可以用来换取物品、经验、等级或其它。</FONT></P>
+<P><FONT size=2><FONT 
+color=#0000ff><STRONG>实现方法：</STRONG></FONT><BR>&nbsp;&nbsp;&nbsp; 
+泡点是基于地图的，可以指定那些地图可以有泡点功能，人物进入此地图后就会自动增加点数。时间越长得到的点数就越多。<BR><BR>地图配置文件 
+MapInfo.txt<BR>以比奇省图为例<BR><BR>[0 比奇省 0] 
+INCGAMEPOINT(60/1)<BR><BR>此设置代表人物在比奇地图中时，60秒会自动得到1个游戏点。<BR><BR>通过脚本玩家可以查到自己的游戏点数及兑换经验,例:<BR>[@main]<BR>当前系统时间&lt;$LOGINTIME&gt;，&lt;你进入游戏时间&gt;为：&lt;$LOGINLONG&gt;\<BR>&lt;$USERNAME&gt;您好根据您进入的时间所累计的&lt;$GAMEGOLDNAME&gt;有&lt;$GAMEPOINT&gt;点\<BR>&lt;当前等级&gt;：&lt;$LEVEL&gt;级 
+&lt;当前PK点数&gt;：&lt;$PKPOINT&gt;点，&lt;泡点点数&gt;：&lt;$GAMEPOINT&gt;点\<BR>&lt;当前声望&gt;：&lt;$CREDITPOINT&gt;点 
+&lt;当前经验&gt;：&lt;$EXP&gt;&lt;当前升级经验&gt;：&lt;$MAXEXP&gt;\ 
+\<BR>『&lt;兑换经验<A>/@GetExp</A>&gt;』--每100个游戏点可以换经验100W\ 
+\<BR>〖&lt;返回<A>/@back</A>&gt;〗 
+〖&lt;关闭<A>/@exit</A>&gt;〗<BR>[@GetExp]<BR>  </FONT><FONT size=2>#if<BR>&nbsp; CHECKGAMEPOINT &gt; 
+100<BR>#act<BR>&nbsp;CHANGEEXP&nbsp; + 
+1000000<BR>&nbsp; GAMEPOINT - 
+100<BR>#say<BR>兑换成功<BR>#ELSESAY<BR>你都没100游戏点数!!!</FONT><FONT size=2><BR>&lt;返回/@main&gt;<BR></P></FONT>
+</BODY>
+</HTML>

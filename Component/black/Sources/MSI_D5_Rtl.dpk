@@ -1,0 +1,87 @@
+package MSI_D5_Rtl;
+
+{$R *.RES}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DESCRIPTION 'MiTeC System Information Component'}
+{$RUNONLY}
+{$IMPLICITBUILD OFF}
+
+requires
+  VCL50,
+  Vclx50,
+  VclSmp50;
+
+contains
+MiTeC_AdvAPI in 'MiTeC_AdvAPI.pas',
+  MiTeC_CtrlRtns in 'MiTeC_CtrlRtns.pas',
+  MiTeC_Datetime in 'MiTeC_Datetime.pas',
+  MiTeC_Dialogs in 'MiTeC_Dialogs.pas',
+  MiTeC_EventLogNT in 'MiTeC_EventLogNT.pas',
+  MiTeC_IpHlpAPI in 'MiTeC_IpHlpAPI.pas',
+  MiTeC_JobsNT in 'MiTeC_JobsNT.pas',
+  MiTeC_Native in 'MiTeC_Native.pas',
+  MiTeC_NetAPI32 in 'MiTeC_NetAPI32.pas',
+  MiTeC_NTDDK in 'MiTeC_NTDDK.pas',
+  MiTeC_Params in 'MiTeC_Params.pas',
+  MiTeC_PSAPI in 'MiTeC_PSAPI.pas',
+  MiTeC_Routines in 'MiTeC_Routines.pas',
+  MiTeC_ServerNT in 'MiTeC_ServerNT.pas',
+  MiTeC_Shares in 'MiTeC_Shares.pas',
+  MiTeC_Shell in 'MiTeC_Shell.pas',
+  MiTeC_StrUtils in 'MiTeC_StrUtils.pas',
+  MiTeC_SvrAPI in 'MiTeC_SvrAPI.pas',
+  MiTeC_WinIOCTL in 'MiTeC_WinIOCTL.pas',
+  MiTeC_WkstaNT in 'MiTeC_WkstaNT.pas',
+  MiTeC_WnASPI32 in 'MiTeC_WnASPI32.pas',
+  MSI_APM in 'MSI_APM.pas',
+  MSI_Common in 'MSI_Common.pas',
+  MSI_Console in 'MSI_Console.pas',
+  MSI_CPU in 'MSI_CPU.pas',
+  MSI_Devices in 'MSI_Devices.pas',
+  MSI_Disk in 'MSI_Disk.pas',
+  MSI_Display in 'MSI_Display.pas',
+  MSI_DMA in 'MSI_DMA.pas',
+  MSI_Engines in 'MSI_Engines.pas',
+  MSI_Machine in 'MSI_Machine.pas',
+  MSI_Media in 'MSI_Media.pas',
+  MSI_Memory in 'MSI_Memory.pas',
+  MSI_Network in 'MSI_Network.pas',
+  MSI_OS in 'MSI_OS.pas',
+  MSI_Printers in 'MSI_Printers.pas',
+  MSI_SMBIOS in 'MSI_SMBIOS.pas',
+  MSI_Software in 'MSI_Software.pas',
+  MSI_Startup in 'MSI_Startup.pas',
+  MiTeC_AccountsNT in 'MiTeC_AccountsNT.pas',
+  MSI_Splash in 'MSI_Splash.pas' {scrMSI_Splash},
+  MSI_Overview in 'MSI_Overview.pas' {frmMSI_Overview},
+  MSI_ResourcesDlg in 'MSI_ResourcesDlg.pas' {dlgResources},
+  MSI_DetailDlg in 'MSI_DetailDlg.pas' {dlgMSI_Detail},
+  MSI_CPUUsage in 'MSI_CPUUsage.pas',
+  MSI_GUI in 'msi_gui.pas',
+  MSI_USB in 'MSI_USB.pas',
+  MiTeC_USB in 'MiTeC_USB.pas',
+  MSI_Storage in 'MSI_Storage.pas',
+  MSI_Processes in 'MSI_Processes.pas',
+  MSI_ExceptionStack in 'MSI_ExceptionStack.pas' {dlgExceptionStack},
+  MiTeC_Journal in 'MiTeC_Journal.pas';
+
+end.

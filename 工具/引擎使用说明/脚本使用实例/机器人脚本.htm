@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>机器人脚本</TITLE>
+</HEAD>
+<BODY>
+<P><FONT size=2><STRONG><FONT 
+color=#0000ff>功能：</FONT></STRONG><BR>&nbsp;&nbsp;&nbsp; 
+系统机器人，可以定时做一些指定操作<BR>&nbsp;&nbsp;&nbsp; 相关配置目录:<BR>\Envir\Robot_def\</FONT></P>
+<P><BR><FONT size=2>&nbsp;&nbsp;&nbsp; 
+相关文件:<BR>\Envir\Robot.txt&nbsp;&nbsp;&nbsp;&nbsp; 
+机器人配置文件<BR>\Envir\Robot_def\RobotManage.txt 机器人运行脚本文件</FONT> </P>
+<P><FONT size=2>机器人配置文件格式:<BR>;Robot.txt<BR>;机器人名称&nbsp;&nbsp; &nbsp; 脚本名称<BR>&nbsp;系统控制&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+AutoRunRobot</FONT> 
+</P>
+<P><BR><FONT size=2>脚本格式:<BR>;AutoRunRobot.txt 
+<BR>#AutoRun&nbsp;NPC&nbsp;SEC&nbsp;10&nbsp;@SendRedMsg<BR>SEC：按秒运行<BR></FONT><FONT 
+size=2>MIN：按分运行<BR>HOUR：按小时运行<BR>DAY：按天运行<BR>RUNONWEEK：按星期几及时间运行<BR>#AutoRun&nbsp;NPC&nbsp;RUNONWEEK&nbsp;5:15:55&nbsp;@SendRedMsg<BR>星期五15点55分运行</FONT></P>
+<P><FONT size=2><FONT 
+color=#0000ff>实例：</FONT><BR>Robot.txt内容：该文件在\Envir\下<BR>;==========================<BR></FONT><FONT><FONT 
+size=2>Test Test<BR>;==========================</FONT></FONT></P>
+<P><FONT><FONT 
+size=2>Test.txt内容：（每8秒钟运行脚本一次）该文件在\Envir\Robot_def\下<BR>;==========================<BR><FONT 
+size=+0><FONT 
+size=2>#AutoRun&nbsp;NPC&nbsp;SEC&nbsp;8&nbsp;@DHB<BR>;==========================</FONT></FONT></FONT></FONT></P>
+<P><FONT><FONT size=2><FONT size=+0><FONT 
+size=2>RobotManage.txt内容（内容即普通脚本内容）该文件在\Envir\Robot_def\下<BR>;==========================<BR><FONT 
+size=+0><FONT size=2>[@DHB]<BR>#if<BR>#act<BR>&nbsp; SENDMSG 0 
+双头金刚怪物攻城了......<BR>&nbsp; MISSION 3 330 330<BR>&nbsp; PARAM1 360<BR>&nbsp; 
+PARAM2 340<BR>&nbsp; PARAM3 10<BR>&nbsp; PARAM4 1<BR>&nbsp; MOBPLACE 
+双头金刚<BR>;==========================</FONT></FONT></P></FONT></FONT></FONT></FONT>
+</BODY>
+</HTML>

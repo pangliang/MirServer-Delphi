@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>防刷屏验证码脚本</TITLE>
+</HEAD>
+<BODY>
+[@Login] <br>
+#IF <br>
+CHECKLEVELEX &gt; 0 <br>
+#ACT <br>
+MOVR N1 10000000 <br>
+;;;MOVR 这个命令大家都是知道的，就是产生随机数的 <br>
+#SAY <br>
+飘飘网络为了防止挂机网站恶意刷屏.为了净化一个良好的游戏空间!\ <br>
+所有玩家上线全部自动禁言.请输入验证码&lt;$STR(N1)&gt;进行解除禁言.\ \ <br>
+&lt;输入验证码解除禁言/@@InPutInteger1&gt;\ <br>
+;玩家输入点确定后，将调转到[@InPutInteger1] <br>
+[@InPutInteger1] <br>
+#IF <br>
+equal N0 N1 <br>
+;;;===用户输入的数据默认都是存放在N0中，这里只需对N0 和N1比较一下就可以==== <br>
+#SAY <br>
+验证码输入正确 <br>
+#elsesay <br>
+验证码输入不正确
+<P><FONT size=2><BR>
+</FONT></P>
+</BODY>
+</HTML>

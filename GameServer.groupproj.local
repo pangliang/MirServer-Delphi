@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2014-11-26 20:59:42.156.groupproj,d:\Backup\RAD Studio\Projects\ProjectGroup1.groupproj=D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj</Transaction>
+    <Transaction>2014-11-26 21:02:44.765.groupproj,D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj=D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj</Transaction>
+    <Transaction>2014-11-26 21:05:29.046.groupproj,D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj=D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj</Transaction>
+    <Transaction>2014-11-26 21:06:27.031.groupproj,D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj=D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj</Transaction>
+    <Transaction>2014-11-26 21:08:23.984.groupproj,D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj=D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj</Transaction>
+    <Transaction>2014-11-26 21:08:31.609.groupproj,D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj=D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj</Transaction>
+    <Transaction>2014-11-26 21:09:22.390.groupproj,D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj=D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj</Transaction>
+    <Transaction>2014-11-26 21:10:18.046.groupproj,D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj=D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj</Transaction>
+    <Transaction>2014-11-26 21:19:59.203.groupproj,D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj=D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj</Transaction>
+    <Transaction>2014-11-26 21:24:15.578.groupproj,D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj=D:\Projects\chuanqi\workspace\EGameOfMir\GameServer.groupproj</Transaction>
+  </Transactions>
+  <Default.Personality>
+    <Projects ActiveProject="zPlugOfEngine.dll"/>
+  </Default.Personality>
+</BorlandProject>

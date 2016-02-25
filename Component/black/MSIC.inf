@@ -1,0 +1,43 @@
+File: msic.zip
+Product: MiTeC System Information Component
+Version: 8.6.5
+Author: Michal Mutl
+E-Mail: michal.mutl@mitec.cz
+Target: Delphi 5.x, Delphi 6.x, Delphi 7.x
+Platform: W95, W98, NT, W2000, Windows ME, Windows XP
+Status: Fully Functional 
+Source: Purchase/Registration 
+Description: Component providing detailed system information
++ Registered organization, owner
++ Time Zone info
++ Machine name, IP address, MAC Address
++ SMBIOS/DMI enumeration
++ Direct memory access
++ Last boot date and time,  Boot time
++ CPU architecture, type, active mask, count, level, revision, vendor, id, speed,
++ OS version, build number, platform, CSD version, version name, user name, serial number
++ Locale Information
++ DVD Region, folders
++ Graphic adapter chip name, dac, memory, screen width and height, color depth, modes
++ Sound card name, WaveIn, WaveOut, MIDIIn, MIDIOut, AUX, Mixer  device name
++ Printers
++ Memory info, allocation granularity, min.and max.application address
++ Disk info, file system, controllers
++ Video BIOS version and date
++ Network adapter, protocols, sevices, clients
++ TCP/IP and Winsock info
++ BDE, ODBC, DAO, ADO, ASPI, DirectX, OpenGL, DotNET, IE information
++ Device overview (like Device Manager)
++ Win9x resources
++ Running process enumeration
++ Installed software enumeration
++ Startup runs enumeration
++ Internet settings
++ Sharepoints, Service, Driver, Account, Event Log enumerations
++ Storage devices enumeration (HDD, CDROM...)
++ USB devices enumeration
++ Component showing CPU usage
++ XML reports and Report Viewer
++ Journal files viewer
+
+Demos and many usefull apps included.

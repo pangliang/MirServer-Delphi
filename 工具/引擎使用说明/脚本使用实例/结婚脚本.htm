@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>结婚脚本</TITLE>
+</HEAD>
+<BODY>
+<P><FONT size=2>结婚脚本<BR><BR>[@main]<BR>&lt;我想结婚</FONT><A><FONT size=2>/@marry&gt;\</FONT></A><BR><FONT size=2>&lt;我想离婚</FONT><A><FONT 
+size=2>/@unmarry&gt;\</FONT></A><FONT size=2> 
+\<BR>&lt;离开</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT size=2>[@marry]<BR>求婚者必须是男性且拥有求婚戒指，\<BR>你准备好求婚了吗？\ 
+\<BR>&lt;准备好了</FONT><A><FONT 
+size=2>/@agree&gt;\</FONT></A><BR><FONT 
+size=2>&lt;下次再来</FONT><A><FONT 
+size=2>/@exit&gt;\</FONT></A><FONT size=2> \ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT size=2>[@agree]<BR>#if<BR>&nbsp;&nbsp; checkmarry<BR>#act <BR>&nbsp;&nbsp; 
+break<BR>#say<BR>你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;<BR>#if<BR>&nbsp; 
+checkposemarry<BR>#say<BR>对方已经结过婚了，是不是想犯重婚罪呀！！！\ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;<BR>#act<BR>&nbsp; break</FONT> </P>
+<P><FONT size=2>#if<BR>&nbsp;&nbsp; gender man<BR>#elsesay<BR>只有男的向女的求婚，还没见过大姑娘向小伙子求婚的。\ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;<BR>#elseact<BR>&nbsp;&nbsp; break</FONT> </P>
+<P><BR><FONT size=2>#if<BR>&nbsp; checkposegender 男<BR>#say<BR>你变态呀！！！想搞同性恋！！！ \ 
+\<BR>&lt;返回</FONT><A><FONT size=2>/@main</FONT></A><FONT size=2>&gt;<BR>#act<BR>&nbsp; break</FONT> </P>
+<P><FONT size=2>#if<BR>&nbsp;&nbsp; checkposedir 2<BR>#elsesay<BR>你们二个面对面站好呀，不要乱动。\ 
+\<BR>&lt;返回</FONT><A><FONT size=2>/@main</FONT></A><FONT size=2>&gt;<BR>#elseact<BR>&nbsp; break</FONT> </P>
+<P><FONT size=2>#if<BR>&nbsp; checklevel 40<BR>#elsesay<BR>结婚要求你的等级必须40级或以上，小伙子努力练好级再来找我。\ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;<BR>#elseact<BR>&nbsp; break<BR>#if<BR>&nbsp; 
+checkposelevel &gt; 34<BR>#elsesay<BR>你的对象还没成年，等她长大点再来吧！小伙子不要心急嘛！\ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;<BR>#elseact<BR>&nbsp; break<BR>#if <BR>&nbsp;&nbsp; 
+checkitemw 求婚戒指 1<BR>#elsesay<BR>你没求婚戒指，弄到求婚戒指再来找我吧！！！\ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;<BR>#elseact<BR>&nbsp;&nbsp; break</FONT> </P>
+<P><FONT size=2>#if<BR>#act<BR>&nbsp;&nbsp; takew 求婚戒指 1<BR>&nbsp;&nbsp; marry</FONT> </P>
+<P><FONT size=2></FONT>&nbsp;</P>
+<P><FONT size=2>[@StartMarry]<BR>#if<BR>&nbsp;&nbsp; 
+checkmarry<BR>#say<BR>你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;<BR>#act<BR>&nbsp;&nbsp; break</FONT> </P>
+<P><FONT size=2>#if<BR>&nbsp;&nbsp; gender man<BR>#act<BR>&nbsp;&nbsp; 
+break<BR>#say<BR>婚礼现在正式开始。\ \<BR>你愿意娶对方为妻，并照顾她一生一世吗？\ 
+\<BR>&lt;我愿意</FONT><A><FONT 
+size=2>/@RequestMarry</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT size=2>#if<BR>&nbsp;&nbsp; gender<BR>#act<BR>&nbsp;&nbsp; 
+break<BR>#say<BR>婚礼现在正式开始。\ \<BR>请耐心等待你心爱的人向你求婚\ \</FONT> </P>
+<P><BR><FONT size=2>[@RequestMarry]<BR>#if<BR>&nbsp;&nbsp; checkmarry<BR>#act<BR>&nbsp;&nbsp; 
+break<BR>#say<BR>你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ \<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT size=2>#if<BR>#act<BR>&nbsp; marry 
+requestmarry<BR>[@WateMarry]<BR>你已向对方求婚，请耐心等待对方的答复。</FONT></P>
+<P><FONT size=2>[@RevMarry]<BR>#if<BR>&nbsp;&nbsp; checkmarry<BR>#act<BR>&nbsp;&nbsp; 
+break<BR>#say<BR>你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ \<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT size=2>#if<BR>#say<BR>对方向你求婚，你是否答应嫁给他？ \ \<BR>&lt;我愿意</FONT><A><FONT size=2>/@ResposeMarry</FONT></A><FONT size=2>&gt; 
+\<BR>&lt;我不愿意</FONT><A><FONT 
+size=2>/@ResposeMarryFail</FONT></A><FONT size=2>&gt;<BR>[@ResposeMarry]<BR>#if<BR>&nbsp;&nbsp; 
+checkmarry<BR>#act<BR>&nbsp;&nbsp; break<BR>#say<BR>你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT size=2>#if<BR>#act<BR>&nbsp; marry responsemarry ok</FONT>   </P>
+<P><FONT size=2>[@ResposeMarryFail]<BR>#if<BR>&nbsp;&nbsp; checkmarry<BR>#act<BR>&nbsp;&nbsp; 
+break<BR>#say<BR>你都结过婚了，还来注册结婚，想犯重婚罪呀！！！ \ \<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT size=2>#if<BR>#act<BR>&nbsp; marry responsemarry 
+fail<BR>[@EndMarry]<BR>你们二个已经成为了一对全法夫妻了。\ 
+\<BR>&lt;关闭</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT size=2>&gt;<BR>[@EndMarryFail]<BR>结婚失败！\ 
+\<BR>&lt;关闭</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT size=2>&gt;<BR>[@MarryDirErr]<BR>对方没站好位置</FONT></P>
+<P><FONT size=2>[@MarryCheckDir]<BR>请站好位置\\</FONT></P>
+<P><FONT size=2>[@HumanTypeErr]<BR>你变态呀，既然选择一个非人类作为结婚对象。</FONT></P>
+<P><FONT size=2>[@MarrySexErr]<BR>你变态呀，既然同性恋。</FONT></P>
+<P><FONT 
+size=2>;==========================================<BR>离婚开始<BR>[@unmarry]<BR>#if<BR>&nbsp;&nbsp; 
+checkmarry<BR>#act<BR>&nbsp;&nbsp; unmarry<BR>#elsesay<BR>你都没结婚离什么婚？？\ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT size=2></FONT>&nbsp;</P>
+<P><FONT 
+size=2>;=======================================================<BR>;双方离婚时没面对面站好显示的信息<BR>[@UnMarryCheckDir]<BR>要离婚是吧？离婚是二个人的事，必须二个人对面对站好位置，\<BR>如果人来不了你只能选择强行离婚姻了。\ 
+\<BR>&lt;我要强行离婚</FONT><A><FONT 
+size=2>/@fUnMarry&gt;\</FONT></A><BR><FONT 
+size=2>&lt;返回</FONT><A><FONT size=2>/@main</FONT></A><FONT 
+size=2>&gt;<BR>;=======================================================<BR>;对面位置不是人物时显示的信息<BR>[@UnMarryTypeErr]<BR>你对面站了个什么东西，怎么不太象人来的。\ 
+\<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT 
+size=2>;=======================================================<BR>;开始离婚程序后，双方显示的信息<BR>[@StartUnMarry]<BR>#if<BR>&nbsp;&nbsp; 
+gender man<BR>#act<BR>&nbsp;&nbsp; BREAK<BR>#say<BR>是否确定真的要与你共事多年的妻子离婚吗？\ 
+\<BR>&lt;确定</FONT><A><FONT 
+size=2>/@RequestUnMarry</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT size=2>#if<BR>&nbsp; gender<BR>#say<BR>你的老公现在向我请求离婚，是不是愿意协议离婚？ \ 
+\<BR>&lt;确定</FONT><A><FONT 
+size=2>/@RequestUnMarry</FONT></A><FONT size=2>&gt;<BR>#act<BR>&nbsp; break</FONT> </P>
+<P><FONT 
+size=2>;=======================================================<BR>;发出离婚请求<BR>[@RequestUnMarry]<BR>#if<BR>&nbsp; 
+checkmarry<BR>#act<BR>&nbsp; unmarry 
+requestunmarry<BR>;=======================================================<BR>;回应离婚请求<BR>[@ResposeUnMarry]<BR>#if<BR>&nbsp; 
+checkmarry<BR>#act<BR>&nbsp; unmarry 
+responseunmarry</FONT>  </P>
+<P><FONT 
+size=2>;===============================================<BR>;请求离婚后显示的信息<BR>[@WateUnMarry]<BR>你已向对方发出离婚请求，请耐心等待对方的答复。</FONT></P>
+<P><FONT 
+size=2>;===============================================<BR>;请求离婚后对方显示的信息<BR>[@RevUnMarry]<BR>对方向你离婚请求，你是否答应离婚？ 
+\ \<BR>&lt;我愿意</FONT><A><FONT 
+size=2>/@RequestUnMarry</FONT></A><FONT size=2>&gt;<BR>&lt;返回</FONT><A><FONT 
+size=2>/@main</FONT></A><FONT size=2>&gt;</FONT></P>
+<P><FONT 
+size=2>;===============================================<BR>;没结过婚的人点离婚后出的提示信息<BR>[@ExeMarryFail]<BR>你都没结过婚，跑来做什么？ 
+\ \<BR>[返回</FONT><A><FONT size=2>/@main</FONT></A><FONT size=2>]</FONT></P>
+<P><FONT 
+size=2>;==============================================<BR>;强行离婚<BR>[@fUnMarry]<BR>#if<BR>&nbsp; 
+checkitem 金条 1<BR>&nbsp; checkmarry<BR>#act<BR>&nbsp; take 金条 1<BR>&nbsp; 
+unmarry requestunmarry 
+force<BR>#elsesay<BR>要收一根金条的手续费，你没有金条，\<BR>我不能让你离婚。\<BR>&lt;确定</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT size=2>&gt;<BR>;==============================================<BR>;离婚完成后的提示信息<BR>[@UnMarryEnd]<BR>呵呵，你已经脱离苦海了！！！ 
+\ 
+\<BR>&lt;退出</FONT><A><FONT size=2>/@exit</FONT></A><FONT size=2>&gt;<BR>[@asktime]<BR>你调查结婚时间的请求已发出，\<BR>请稍后。\<BR>&lt;确定</FONT><A><FONT size=2>/@exit</FONT></A><FONT 
+size=2>&gt;</FONT></P>
+</BODY>
+</HTML>

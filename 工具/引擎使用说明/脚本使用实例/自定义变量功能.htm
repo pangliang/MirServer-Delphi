@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>自定义变量功能</TITLE>
+</HEAD>
+<BODY>
+<P><FONT size=2><FONT 
+color=#0000ff><STRONG>功能：</STRONG><BR></FONT>&nbsp;&nbsp;&nbsp; 
+自定义变量功能，不再受固定几个变量限制</FONT></P>
+<P><FONT size=2><STRONG><FONT 
+color=#0000ff>使用方法：</FONT></STRONG><BR>&nbsp;&nbsp;&nbsp; 
+三个步骤：<BR>&nbsp;&nbsp;&nbsp; 1、首先要声明变量<BR>&nbsp;&nbsp;&nbsp; 
+2、读取变量<BR>&nbsp;&nbsp;&nbsp; 
+3、保存变量<BR>该变量支持增加、减少、脚本查看、检查大小等功能，该功能的开发突破了变量使用受限制，利用该变量可制作出超强功能脚本。<BR>脚本样例：<BR>=========================================<BR>&lt;声明变量</FONT><A><FONT 
+size=2>/@newvarInteger</FONT></A><FONT size=2>&gt; \<BR></FONT><FONT 
+size=2>&lt;查看变量</FONT><A><FONT size=2>/@viewvarInteger</FONT></A><FONT 
+size=2>&gt;</FONT><A><FONT size=2>\</FONT></A><BR><FONT 
+size=2>&lt;读取变量</FONT><A><FONT size=2>/@loadvarInteger</FONT></A><FONT 
+size=2>&gt; </FONT><A><FONT size=2>\</FONT></A><BR><FONT 
+size=2>&lt;保存变量</FONT><A><FONT size=2>/@savevarInteger</FONT></A><FONT 
+size=2>&gt; </FONT><A><FONT size=2>\</FONT></A><BR><FONT 
+size=2>&lt;增加变量</FONT><A><FONT size=2>/@calcvarinc</FONT></A><FONT 
+size=2>&gt;&nbsp; &lt;检查变量是否大于</FONT><A href="mailto:5/@checklarage5>\"><FONT 
+size=2>5/@checklarage5&gt;\</FONT></A><BR><FONT size=2>&lt;减少变量</FONT><A><FONT 
+size=2>/@calcvardec</FONT></A><FONT size=2>&gt;&nbsp; &lt;检查变量是否小于</FONT><A 
+href="mailto:5/@checksmall5>\"><FONT 
+size=2>5/@checksmall5&gt;\</FONT></A><BR><FONT size=2>&lt;检查变量是否等于</FONT><A 
+href="mailto:5/@checkequal5"><FONT size=2>5/@checkequal5</FONT></A><FONT 
+size=2>&gt;<BR>[@calcvarinc]<BR>#IF<BR>#ACT<BR>&nbsp; CALCVAR HUMAN QQQQ + 
+5<BR>goto @varcontrol<BR>[@calcvardec]<BR>#IF<BR>#ACT<BR>&nbsp; CALCVAR HUMAN 
+QQQQ - 5<BR>goto @varcontrol<BR>[@checkequal5]<BR>#IF<BR>&nbsp; CHECKVAR HUMAN 
+QQQQ = 5<BR>#ACT<BR>&nbsp; sendmsg 7 等于5<BR>&nbsp; goto 
+@varcontrol<BR>#ELSEACT<BR>&nbsp; sendmsg 7 不等于5<BR>&nbsp; goto 
+@varcontrol<BR>[@checklarage5]<BR>#IF<BR>&nbsp;CHECKVAR HUMAN QQQQ &gt; 
+5<BR>#ACT<BR>&nbsp; sendmsg 7 大于5<BR>&nbsp; goto 
+@varcontrol<BR>#ELSEACT<BR>&nbsp; sendmsg 7 小于5<BR>&nbsp; goto 
+@varcontrol<BR>[@checksmall5]<BR>#IF<BR>&nbsp;CHECKVAR HUMAN QQQQ &lt; 
+5<BR>#ACT<BR>&nbsp; sendmsg 7 小于5<BR>&nbsp; goto 
+@varcontrol<BR>#ELSEACT<BR>&nbsp; sendmsg 7 大于5<BR>&nbsp; goto 
+@varcontrol</FONT></P>
+<P><FONT size=2>[@decInteger]<BR>#ACT<BR>&nbsp; DEC QQQQ 1<BR>&nbsp; sendmsg 7 
+&lt;$HUMAN(QQQQ)&gt;<BR>&nbsp; goto 
+@varcontrol<BR>[@addInteger]<BR>#ACT<BR>&nbsp; INC QQQQ 1<BR>&nbsp; sendmsg 7 
+&lt;$HUMAN(QQQQ)&gt;<BR>&nbsp; goto 
+@varcontrol<BR>[@loadvarInteger]<BR>#IF<BR>#ACT<BR>&nbsp; LOADVAR HUMAN QQQQ 
+VarSave.txt<BR>&nbsp; sendmsg 7 OK<BR>&nbsp; GOTO @varcontrol</FONT></P>
+<P><FONT size=2>[@savevarInteger]<BR>#IF<BR>#ACT<BR>&nbsp; SAVEVAR HUMAN QQQQ 
+VarSave.txt<BR>&nbsp; sendmsg 7 OK<BR>&nbsp; GOTO 
+@varcontrol<BR>[@viewvarInteger]<BR>#ACT<BR>&nbsp; sendmsg 7 
+&lt;$HUMAN(QQQQ)&gt;<BR>&nbsp; GOTO @varcontrol<BR></FONT><FONT 
+size=2><BR>[@newvarInteger]<BR>#IF<BR>#ACT<BR>&nbsp; VAR Integer HUMAN QQQQ 
+<BR>&nbsp; sendmsg 7 OK<BR>&nbsp; GOTO 
+@varcontrol<BR>[@viewvarString]<BR>&lt;$HUMAN(QQQS)&gt;<BR></FONT></P>
+</BODY>
+</HTML>

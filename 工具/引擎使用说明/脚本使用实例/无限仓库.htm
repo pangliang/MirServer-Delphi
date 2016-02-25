@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>无限仓库</TITLE>
+</HEAD>
+<BODY>
+(@bigstorage @biggetback @getnextpage @getPreviouspage)<br>
+%100<br>
+[@main]<br>
+您好。我是仓库保管员。这里存放的物品不受限制。\<br>
+无论你有多少物品，我这里都可以存放进去。\<br>
+&lt;存放物品/@bigstorage&gt;\<br>
+&lt;取回物品/@biggetback&gt;\<br>
+&lt;离开/@exit&gt;
+<p>[@bigstorage]<br>
+  需要保管什么东西?\ \<br>
+&lt;返回/@main&gt;</p>
+<p>[@biggetback]<br>
+  请看目录决定找什么东西.\ \<br>
+&lt;上一页/@getPreviouspage&gt; &lt;下一页/@getnextpage&gt; \<br>
+&lt;返回/@main&gt;</p>
+<p>[@getPreviouspage]<br>
+  #ACT<br>
+  goto @biggetback</p>
+<p>[@getnextpage]<br>
+  #ACT<br>
+  goto @biggetback</p>
+<P><FONT size=2><BR>
+</FONT></P>
+</BODY>
+</HTML>

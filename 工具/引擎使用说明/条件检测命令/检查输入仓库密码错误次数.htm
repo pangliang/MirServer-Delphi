@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>检查输入仓库密码错误次数</TITLE>
+</HEAD>
+<BODY>
+<P><STRONG><FONT color=#0000ff 
+size=2>功能：</FONT></STRONG><BR>&nbsp;&nbsp;&nbsp; 
+检查输入仓库密码错误次数。</P>
+<P><STRONG><FONT color=#0000ff 
+size=2>格式：</FONT></STRONG><BR><FONT 
+size=2>PASSWORDERRORCOUNT 控制符(=,&gt;,&lt;)&nbsp; 范围(1 - 65535)< /FONT>   </P>
+<P><FONT 
+size=2>;==========================================<BR>;检查输入错误的次数是否等于指定值<BR>[@passworderror1]<BR>#IF<BR>&nbsp; 
+PASSWORDERRORCOUNT = 
+3<BR>#SAY<BR>您的错误次数等于3。<BR>#ELSESAY<BR>您的错误次数不等于3。<BR>;==========================================</FONT></P>
+<P><FONT 
+size=2>;==========================================<BR>;检查输入错误的次数是否大于指定值<BR>[@passworderror2]<BR>#IF<BR>&nbsp; 
+PASSWORDERRORCOUNT &gt; 
+3<BR>#SAY<BR>您的错误次数大于3。<BR>#ELSESAY<BR>您的错误次数不大于3。<BR>;==========================================</FONT></P>
+<P><FONT 
+size=2>;==========================================<BR>;检查输入错误的次数是否小于指定值<BR>[@passworderror3]<BR>#IF<BR>&nbsp; 
+PASSWORDERRORCOUNT &lt; 
+3<BR>#SAY<BR>您的错误次数小于3。<BR>#ELSESAY<BR>您的错误次数不小于3。<BR>;==========================================</FONT></P>
+</BODY>
+</HTML>

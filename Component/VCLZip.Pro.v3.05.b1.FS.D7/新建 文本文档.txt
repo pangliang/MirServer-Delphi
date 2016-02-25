@@ -1,0 +1,46 @@
+压缩 
+function AddFileToZip(const SrcFileName, 
+ZipFileName: string): Boolean; 
+var 
+AZip: TVCLZip; 
+begin 
+AZip := TVCLZip.Create(nil); 
+try 
+　　AZip.ZipName := "压缩后的文件名"; 
+　　AZip.FilesList.Add(SrcFileName); 
+　　AZip.Password := ZipPassWord; 
+　　AZip.ZipAction := ZipActionMode; 
+　　AZip.Zip; 
+finally 
+　　FreeAndNil(AZip); 
+end; 
+Result := True; 
+end; 
+
+解压缩： 
+function TDataMove.ExtractFileFromZip(const DesPathName, 
+ZipFileName: string): Boolean; 
+var 
+AZip: TVCLZip; 
+begin 
+AZip := TVCLZip.Create(nil); 
+try 
+　　with AZip do 
+　　begin 
+　 OverwriteMode := Always; 
+　 ZipName := ZipFileName; 
+　 Password := ZipPassWord; 
+　 ZipAction := ZipActionMode; 
+　 DestDir := DesPathName; 
+　 ReadZip; 
+　 DoAll := True; 
+　 RecreateDirs := False; 
+　 RetainAttributes := True; 
+　 ReplaceReadOnly := True; 
+　 UnZip; 
+　　end; 
+finally 
+　　FreeAndNil(AZip); 
+end; 
+Result := True; 
+end; 

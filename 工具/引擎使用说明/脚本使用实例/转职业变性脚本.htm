@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<META name="GENERATOR" content="QuickCHM">
+<TITLE>转职业变性脚本</TITLE>
+</HEAD>
+<BODY>
+<P>转职业变性脚本<BR><BR></P>
+<P><FONT size=2><FONT color=#0000ff>[@SexJob]</FONT><BR>请选择转换项目....\ 
+\<BR>『&lt;转换性别</FONT><A><FONT size=2>/@ChangSex</FONT></A><FONT 
+size=2>&gt;』\<BR>『&lt;转换职业</FONT><A><FONT size=2>/@ChangJob</FONT></A><FONT 
+size=2>&gt;』\ \<BR>〖&lt;返回</FONT><A><FONT size=2>/@Main</FONT></A><FONT 
+size=2>&gt;〗 〖&lt;关闭</FONT><A><FONT size=2>/@exit</FONT></A><FONT 
+size=2>&gt;〗</FONT></P>
+<P><FONT size=2><FONT 
+color=#0000ff>[@ChangSex]</FONT><BR>如何你想换性别，这里提供转性别服务\<BR>『&lt;换性别</FONT><A><FONT 
+size=2>/@ChangGender</FONT></A><FONT size=2>&gt;』\ \<BR>〖&lt;返回</FONT><A><FONT 
+size=2>/@MemberSexJob</FONT></A><FONT size=2>&gt;〗 〖&lt;关闭</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT size=2>&gt;〗</FONT></P>
+<P><FONT size=2>[@ChangGender]<BR></FONT><FONT size=2>#IF<BR>gender 
+man<BR>#SAY<BR>是不是做猛男没什么意思呀，想不想尝尝做淑女的滋味呀！！！\ \<BR>『&lt;尝尝</FONT><A><FONT 
+size=2>/@towoman</FONT></A><FONT size=2>&gt;』\ \<BR>〖&lt;返回</FONT><A><FONT 
+size=2>/@ChangSex</FONT></A><FONT size=2>&gt;〗 〖&lt;关闭</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT 
+size=2>&gt;〗<BR>#ELSESAY<BR>是不是做淑女挺累的，想不想尝尝做猛男的滋味呀！！！\ 
+\<BR>『&lt;尝尝</FONT><A><FONT size=2>/@toman</FONT></A><FONT size=2>&gt;』\ 
+\<BR>〖&lt;返回</FONT><A><FONT size=2>/@ChangSex</FONT></A><FONT size=2>&gt;〗 
+〖&lt;关闭</FONT><A><FONT size=2>/@exit</FONT></A><FONT 
+size=2>&gt;〗<BR>[@toman]<BR>#IF<BR>;CHECKLEVEL 50<BR>#ACT<BR>&nbsp;CHANGEGENDER 
+0<BR>#SAY<BR>呵呵，你已经变成一位猛男了。\ \<BR>&lt;返回</FONT><A><FONT 
+size=2>/@MemberSexJob</FONT></A><FONT 
+size=2>&gt;<BR>#ELSESAY<BR>你未到50级不能转性别！！！<BR>[@towoman]<BR>#IF<BR>;CHECKLEVEL 
+50<BR>#ACT<BR>&nbsp;CHANGEGENDER 1<BR>#SAY<BR>呵呵，你已经变成一位淑女了。\ 
+\<BR>〖&lt;返回</FONT><A><FONT size=2>/@MemberSexJob</FONT></A><FONT size=2>&gt;〗 
+〖&lt;关闭</FONT><A><FONT size=2>/@exit</FONT></A><FONT 
+size=2>&gt;〗<BR>#ELSESAY<BR>你未到50级不能转性别！！！<BR>;=========================================================================<BR>[@changjob]<BR>如何你想换一换职业，这里提供转职业服务，\<BR>&lt;注:&gt;会员才能具有转职业的功能！！！\ 
+\<BR>『&lt;换职业</FONT><A><FONT size=2>/@Chang</FONT></A><FONT size=2>&gt;』\&nbsp; 
+\<BR>〖&lt;返回</FONT><A><FONT size=2>/@main</FONT></A><FONT 
+size=2>&gt;〗</FONT></P>
+<P><FONT size=2>[@Chang]<BR></FONT><FONT size=2>#IF<BR>checkjob 
+warrior<BR>#SAY<BR>是不是做武士不好玩呀，换换别的试试吧！\ \<BR>『&lt;玩玩法师</FONT><A><FONT 
+size=2>/@ToWizard</FONT></A><FONT size=2>&gt;』\<BR>『&lt;玩玩道士</FONT><A><FONT 
+size=2>/@Totaos</FONT></A><FONT size=2>&gt;』\ \<BR>〖&lt;返回</FONT><A><FONT 
+size=2>/@changjob</FONT></A><FONT size=2>&gt;〗〖&lt;关闭</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT size=2>&gt;〗<BR>#ACT<BR>break<BR>#IF<BR>checkjob 
+wizard<BR>#SAY<BR>是不是做魔法师不好玩呀，换换别的试试吧！\ \<BR>『&lt;玩玩武士</FONT><A><FONT 
+size=2>/@Towarr</FONT></A><FONT size=2>&gt;』\<BR>『&lt;玩玩道士</FONT><A><FONT 
+size=2>/@Totaos</FONT></A><FONT size=2>&gt;』\ \<BR>〖&lt;返回</FONT><A><FONT 
+size=2>/@changjob</FONT></A><FONT size=2>&gt;〗〖&lt;关闭</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT size=2>&gt;〗<BR>#ACT<BR>break<BR>#IF<BR>checkjob 
+taoist<BR>#SAY<BR>是不是做道士不好玩呀，换换别的试试吧！\ \<BR>『&lt;玩玩武士</FONT><A><FONT 
+size=2>/@Towarr</FONT></A><FONT size=2>&gt;』\<BR>『&lt;玩玩法师</FONT><A><FONT 
+size=2>/@ToWizard</FONT></A><FONT size=2>&gt;』\ \<BR>〖&lt;返回</FONT><A><FONT 
+size=2>/@changjob</FONT></A><FONT size=2>&gt;〗〖&lt;关闭</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT size=2>&gt;〗<BR>#ACT<BR>break<BR>[@Towarr]<BR>#if 
+<BR>#ACT<BR>&nbsp;&nbsp; CHANGEJOB Warrior<BR>#SAY<BR>呵呵，你已经变成一位武士了。\ 
+\<BR>〖&lt;返回</FONT><A><FONT size=2>/@changjob</FONT></A><FONT 
+size=2>&gt;〗〖&lt;关闭</FONT><A><FONT size=2>/@exit</FONT></A><FONT 
+size=2>&gt;〗<BR>#elsesay<BR>你不是会员！！！\ \<BR>〖&lt;返回</FONT><A><FONT 
+size=2>/@changjob</FONT></A><FONT size=2>&gt;〗〖&lt;关闭</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT size=2>&gt;〗<BR>[@ToWizard]<BR>#if 
+<BR>#ACT<BR>&nbsp;&nbsp; CHANGEJOB Wizard<BR>#SAY<BR>呵呵，你已经变成一位魔法师了。\ 
+\<BR>〖&lt;返回</FONT><A><FONT size=2>/@changjob</FONT></A><FONT 
+size=2>&gt;〗〖&lt;关闭</FONT><A><FONT size=2>/@exit</FONT></A><FONT 
+size=2>&gt;〗<BR>#elsesay<BR>你不是会员！！！\ \<BR>〖&lt;返回</FONT><A><FONT 
+size=2>/@changjob</FONT></A><FONT size=2>&gt;〗〖&lt;关闭</FONT><A><FONT 
+size=2>/@exit</FONT></A><FONT size=2>&gt;〗<BR>[@Totaos]<BR>#if 
+<BR>#ACT<BR>&nbsp;&nbsp; CHANGEJOB Taoist<BR>#SAY<BR>呵呵，你已经变成一位道士了。\ 
+\<BR>〖&lt;返回</FONT><A><FONT size=2>/@changjob</FONT></A><FONT 
+size=2>&gt;〗〖&lt;关闭</FONT><A><FONT size=2>/@exit</FONT></A><FONT 
+size=2>&gt;〗</FONT></P>
+</BODY>
+</HTML>
